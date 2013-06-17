@@ -1,10 +1,8 @@
-
 //COLLECTIONS
 
 W.Collections.Items = Backbone.Collection.extend({
-    model: W.Models.Item
+	model: W.Models.Item
 })
-
 
 
 //

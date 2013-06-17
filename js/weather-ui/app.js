@@ -1,10 +1,10 @@
 var W = {
-    Models: {},
-    Views: {},
-    Collections: {}
+	Models: {},
+	Views: {},
+	Collections: {}
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
 
 	console.log("ready");
 
