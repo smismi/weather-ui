@@ -5,7 +5,23 @@ W.Collections.Days = Backbone.Collection.extend({
 })
 
 
-var daily_forecast = new W.Collections.Days([]);
+var daily_forecast = new W.Collections.Days([
+
+	{
+		timestamp: 1234567890,
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	}
+
+]);
 
 
 
