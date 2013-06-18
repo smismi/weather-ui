@@ -2,36 +2,24 @@
 //VIEWS
 
 W.Views.Local = Backbone.View.extend({
-	tagName: "li",
-	template: _.template("<%= _id %>"),
+	tagName: "figure",
+	template: _.template("<%= name %>"),
 	initialize: function() {
-//        console.log("W.Views.Item: initialize");
 		this.render();
-//		this.render().colorize().bind();
 	},
 	render: function() {
-//        console.log("W.Views.Item: render");
-//        var   ccclass = ;
 
-		this.$el.addClass("tile_item " + (this.model.get("className") || "")).html( this.template( this.model.toJSON() ) )
+		this.$el.html( this.template( this.model.toJSON() ) )
 
 		this.$el.append(this.buttons.close);
-		console.log(c_items.length);
-		return this;
-	},
-	colorize: function() {
-//        console.log("W.Views.Item: colorize");
 
-		this.$el.css({"color": this.model.get("color") || "#f60"})
-		return this;
+ 		return this;
 	},
 	close: function() {
-//        alert("close" + this.model.get("_id"))
 
 
 		this.$el.remove();
-		c_items.remove(this.model);
-		console.log(c_items.length);
+		collection_locals.remove(this.model);
 
 
 	},
@@ -44,3 +32,103 @@ W.Views.Local = Backbone.View.extend({
 	}
 
 });
+
+
+W.Views.Locals = Backbone.View.extend({
+	initialize: function() {
+		this.render();
+		this.collection.on("add", this.addOne, this);
+	},
+	addOne: function(local) {
+
+		// создавать новый дочерний вид
+		var _local = new W.Views.Local({model: local});
+		this.$el.append(_local.render().el);
+	},
+	render: function() {
+		this.collection.each(function(each_item){
+
+			this.renderEach(each_item);
+
+		}, this);
+
+		$("#goroda").append(this.$el)
+
+		return this;
+	},
+	renderEach: function(model) {
+
+		var _local = new W.Views.Local({model: model});
+
+		this.$el.append(_local.$el);
+
+
+	}
+})
+
+
+
+W.Views.Add = Backbone.View.extend({
+	el: "#add_form",
+	initialize: function() {
+		console.log("#add_form");
+	},
+	events : {
+		"click .add_button" : "add"
+	},
+	add: function(){
+		var _name = this.$el.find("input[name]").val();
+		var _new_local= new W.Models.Local({name: _name });
+		collection_locals.add(_new_local);
+		console.log(collection_locals.length);
+
+	}
+})
+
+
+W.Views.OneDay = Backbone.View.extend({
+	tagName: "div",
+	template: _.template("<%= timestamp %>"),
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+
+		this.$el.html( this.template( this.model.toJSON() ) );
+
+		return this;
+	},
+})
+
+
+
+
+W.Views.OneWeek = Backbone.View.extend({
+	tagName: "p",
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+		this.collection.each(function(day){
+
+			this.renderEach(day);
+
+		}, this);
+
+		$("#week").append(this.$el)
+
+		return this;
+	},
+	renderEach: function(model) {
+
+		var day = new W.Views.OneDay({model: model});
+
+
+		this.$el.append(day.$el);
+
+
+	}
+})
+
+
+

@@ -5,10 +5,75 @@ W.Collections.Days = Backbone.Collection.extend({
 })
 
 
-var daily_forecast = new W.Collections.Days([
+var collection_days = new W.Collections.Days([
 
 	{
-		timestamp: 1234567890,
+		timestamp: new Date().getTime(),
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	},
+	{
+		timestamp: new Date().getTime(),
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	},
+	{
+		timestamp: new Date().getTime(),
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	},
+	{
+		timestamp: new Date().getTime(),
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	},
+	{
+		timestamp: new Date().getTime(),
+		wearther: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		}
+	},
+	{
+		timestamp: new Date().getTime(),
 		wearther: {
 			temp: 13.13,
 			humidity: 432,
@@ -25,19 +90,21 @@ var daily_forecast = new W.Collections.Days([
 
 
 
-W.Collections.Locals = Backbone.Collection.extend({
+W.Collections.Local = Backbone.Collection.extend({
 	model: W.Models.Local
 })
 
 
-var local = new W.Collections.Locals([
+var collection_locals = new W.Collections.Local([
 
 	{
+		"_id" : "0",
 		"name" : "Moscow",
 		"geo" : {"n": "23.535", "w" : "23.345"},
 		"url" : "/geo/moscow"
 	},
 	{
+		"_id" : "1",
 		"name" : "Tver",
 		"geo" : {"n": "69.345", "w" : "33.345"},
 		"url" : "/geo/tver"
