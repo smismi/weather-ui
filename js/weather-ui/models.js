@@ -1,6 +1,14 @@
 //MODELS
 
-W.Models.Item = Backbone.Model.extend();
+W.Models.Day = Backbone.Model.extend();
 
 
-var item = new W.Models.Item;
+var day  = new W.Models.Day;
+
+
+
+
+W.Models.Local = Backbone.Model.extend();
+
+
+var city  = new W.Models.Local;

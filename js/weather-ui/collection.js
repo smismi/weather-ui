@@ -1,34 +1,32 @@
 //COLLECTIONS
 
-W.Collections.Items = Backbone.Collection.extend({
-	model: W.Models.Item
+W.Collections.Days = Backbone.Collection.extend({
+	model: W.Models.Day
 })
 
 
-//
-//a = new W.Collections.Items({
-//    url: "D:/_projects/backb_bone/js/tl/data.json", success: function() {
-//        console.log('123');
-//    }
-//});
+var daily_forecast = new W.Collections.Days([]);
 
 
-//console.log("2");
 
-//
-//
-//W.Collections.Items = Backbone.Collection.extend(
-//    {
-//        model: W.Models.Item,
-//
-//        url: "data.js",
-//        parse: function(response)
-//        {
-//            return response.results;
-//        }
-//    });
+W.Collections.Locals = Backbone.Collection.extend({
+	model: W.Models.Local
+})
 
-var c_items = new W.Collections.Items([]);
+
+var local = new W.Collections.Locals([
+
+	{
+		"name" : "Moscow",
+		"geo" : {"n": "23.535", "w" : "23.345"},
+		"url" : "/geo/moscow"
+	},
+	{
+		"name" : "Tver",
+		"geo" : {"n": "69.345", "w" : "33.345"},
+		"url" : "/geo/tver"
+	},
+]);
 
 
 
