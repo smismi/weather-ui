@@ -3,13 +3,15 @@
 
 W.Views.Local = Backbone.View.extend({
 	tagName: "figure",
-	template: _.template("<%= name %>"),
+	template: '#template_local',
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
 
-		this.$el.html( this.template( this.model.toJSON() ) )
+		var template = _.template( $(this.template).html() );
+
+		this.$el.html(template( this.model.toJSON() ));
 
 		this.$el.append(this.buttons.close);
 
@@ -155,8 +157,8 @@ W.Views.FullDay = Backbone.View.extend({
 	},
 	render: function() {
 
-		var _sun = this.model.get("sun");
-		collection = new Backbone.Collection(_sun,{model: W.Models.Hour});
+		var _h = this.model.get("sun");
+		collection = new Backbone.Collection(_h,{model: W.Models.Hour});
 
 		_this = this;
 		collection.each(function(hour) {

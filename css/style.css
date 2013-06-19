@@ -3,9 +3,6 @@ body {
     /*background: #99a297;*/
 }
 
-.close {
-
-}
 
 .day_news {
     float: left;
@@ -811,4 +808,11 @@ body {
     float: left;
     width: 190px;
     margin: 0 0 0 0;
+}
+
+
+
+
+div {
+    border: 1px solid red;
 }
