@@ -133,13 +133,13 @@ W.Views.OneWeek = Backbone.View.extend({
 
 W.Views.Hour = Backbone.View.extend({
 	tagName: "div",
-	template: _.template("<p>sun: <%= sun.sunrise %></p><p>sun2: <%= sun.sundown %></p>"),
+	template: _.template("<p>sun: <%= sunrise %></p><p>sun2: <%= sundown %></p>"),
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
 
-		this.$el.html( this.template( this.model.model.toJSON() ) );
+		this.$el.html( this.template( this.model.toJSON() ) );
 
 		return this;
 	}
@@ -154,22 +154,17 @@ W.Views.FullDay = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
+
 		var _sun = this.model.get("sun");
+		collection = new Backbone.Collection(_sun,{model: W.Models.Hour});
 
 		_this = this;
-		$.each( _sun, function(key, value) {
+		collection.each(function(hour) {
 
-			_this.renderEach(_this);
+			_this.renderEach(hour);
+
 		});
 
-//
-//		this.collection.each(function(day){
-//
-//			this.renderEach(day);
-//
-//		}, this);
-//
-//		$("#fullweek").append(this.$el)
 
 		return this;
 	},
