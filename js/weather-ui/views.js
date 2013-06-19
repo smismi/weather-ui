@@ -90,7 +90,7 @@ W.Views.Add = Backbone.View.extend({
 
 W.Views.OneDay = Backbone.View.extend({
 	tagName: "div",
-	template: _.template("<%= timestamp %>"),
+	template: _.template("<%= weather.temp %>"),
 	initialize: function() {
 		this.render();
 	},
@@ -135,13 +135,17 @@ W.Views.OneWeek = Backbone.View.extend({
 
 W.Views.Hour = Backbone.View.extend({
 	tagName: "div",
-	template: _.template("<p>sun: <%= sunrise %></p><p>sun2: <%= sundown %></p>"),
+	template: '#template_hour',
+
+//	template: _.template("<p>hours: <%= temp %>, <%= humidity %>, <%= pressure %>, <%= wind %></p>"),
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
 
-		this.$el.html( this.template( this.model.toJSON() ) );
+		var template = _.template( $(this.template).html() );
+
+		this.$el.html(template( this.model.toJSON() ));
 
 		return this;
 	}
@@ -157,7 +161,7 @@ W.Views.FullDay = Backbone.View.extend({
 	},
 	render: function() {
 
-		var _h = this.model.get("sun");
+		var _h = this.model.get("hours");
 		collection = new Backbone.Collection(_h,{model: W.Models.Hour});
 
 		_this = this;

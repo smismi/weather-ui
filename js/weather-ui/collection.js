@@ -19,32 +19,259 @@ var collection_days = new W.Collections.Days([
 			sunrise: "12:22",
 			sundown: "19:55"
 		},
-		hours: {
-			0 : {
-				temp: 13.13,
-				humidity: 432,
-				pressure: 789,
-				wind: "NNE"
-			},
-			6 : {
-				temp: 13.13,
-				humidity: 432,
-				pressure: 789,
-				wind: "NNE"
-			},
-			12 : {
-				temp: 13.13,
-				humidity: 432,
-				pressure: 789,
-				wind: "NNE"
-			},
-			18 : {
-				temp: 13.13,
-				humidity: 432,
-				pressure: 789,
-				wind: "NNE"
-			},
-		}
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
+	},{
+		timestamp: "1371664199745",
+		weather: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		},
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
+	},{
+		timestamp: "1371664199745",
+		weather: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		},
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
+	},{
+		timestamp: "1371664199745",
+		weather: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		},
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
+	},{
+		timestamp: "1371664199745",
+		weather: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		},
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
+	},
+	{
+		timestamp: "1371664199745",
+		weather: {
+			temp: 13.13,
+			humidity: 432,
+			pressure: 789,
+			wind: "NNE"
+		},
+		sun : {
+			sunrise: "12:22",
+			sundown: "19:55"
+		},
+		hours:
+
+			[
+
+				{
+
+					temp: 13.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "W"
+				},
+				{
+					temp: 23.13,
+					humidity: 432,
+					pressure: 756,
+					wind: "NNE"
+				},
+				{
+					temp: 14.13,
+					humidity: 432,
+					pressure: 789,
+					wind: "SSE"
+				},
+				{
+					temp: 16.13,
+					humidity: 356,
+					pressure: 768,
+					wind: "NNE"
+				}
+
+		]
+
 	}
 
 ]);
