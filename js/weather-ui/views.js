@@ -97,7 +97,7 @@ W.Views.OneDay = Backbone.View.extend({
 		this.$el.html( this.template( this.model.toJSON() ) );
 
 		return this;
-	},
+	}
 })
 
 
@@ -125,6 +125,90 @@ W.Views.OneWeek = Backbone.View.extend({
 
 
 		this.$el.append(day.$el);
+
+
+	}
+})
+
+
+W.Views.Hour = Backbone.View.extend({
+	tagName: "div",
+	template: _.template("<p>sun: <%= sun.sunrise %></p><p>sun2: <%= sun.sundown %></p>"),
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+
+		this.$el.html( this.template( this.model.model.toJSON() ) );
+
+		return this;
+	}
+
+});
+
+
+
+W.Views.FullDay = Backbone.View.extend({
+	tagName: "div",
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+		var _sun = this.model.get("sun");
+
+		_this = this;
+		$.each( _sun, function(key, value) {
+
+			_this.renderEach(_this);
+		});
+
+//
+//		this.collection.each(function(day){
+//
+//			this.renderEach(day);
+//
+//		}, this);
+//
+//		$("#fullweek").append(this.$el)
+
+		return this;
+	},
+	renderEach: function(model) {
+
+		var _hour = new W.Views.Hour({model: model});
+
+
+		this.$el.append(_hour.$el);
+
+
+	}
+})
+
+
+
+
+W.Views.FullWeek = Backbone.View.extend({
+	tagName: "div",
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+		this.collection.each(function(day){
+
+			this.renderEach(day);
+
+		}, this);
+
+		$("#fullweek").append(this.$el)
+
+		return this;
+	},
+	renderEach: function(model) {
+
+		var _day = new W.Views.FullDay({model: model});
+
+
+		this.$el.append(_day.$el);
 
 
 	}
