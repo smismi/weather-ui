@@ -33,6 +33,16 @@
 <div style="width:1000px; margin: 0 auto"> 
 <h1>WEATHER PLOTS</h1>
 
+<!--<div id="goroda"></div>-->
+<!--<div id="week"></div>-->
+<!--<div id="fullweek"></div>-->
+
+<!--<div id="add_form">-->
+	<!--<input type="text"  name="name" value="2eq2r"/>-->
+	<!--<input type="submit" class="add_button" value="add"/>-->
+<!--</div>-->
+
+
 <div class="weather_top_cpanel" style="overflow: hidden;">
 	<h1 class="title">погода</h1>
 	<ul id="cities" class="citieslist">
@@ -872,6 +882,19 @@
 		carousel = $("#carousel-image-and-text").data("touchCarousel");
 	});
 </script>
+
+
+<script id="template_local" type="text/template">
+	<strong><%= _id %></strong> <a href="<%= url %>"><%= name %> </a> - <%= geo.n %> , <%= geo.w %>
+</script>
+ 
+<script id="template_hour" type="text/template">
+	<strong><%= temp %></strong>,
+	<strong><%= humidity %></strong>,
+	<strong><%= pressure %></strong>,
+	<strong><%= wind %></strong>
+</script>
+
 </body>
 </html>
 
