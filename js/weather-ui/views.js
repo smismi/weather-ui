@@ -80,7 +80,7 @@ W.Views.Add = Backbone.View.extend({
 	},
 	add: function(){
 		var _name = this.$el.find("input[name]").val();
-		var _new_local= new W.Models.Local({name: _name });
+		var _new_local= new W.Models.Local({_id: 1, name: _name, url: "/to/path", geo: { n: 12.12, w: 12.12 } });
 		collection_locals.add(_new_local);
 		console.log(collection_locals.length);
 
