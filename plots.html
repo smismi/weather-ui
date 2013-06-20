@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    
+	<meta charset="utf-8">
+	    <title>WEATHER UI</title>
+
+
+	 
+
+	<script src="js/underscore.js"></script>
+	<!--<script src="js/jquery.2.0.js"></script>-->
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.touchcarousel-1.2.js"></script>
+	<script src="js/backbone.js"></script>
+
+	<script src="js/raphael.js"></script>
+	<script src="js/script.js"></script>
+
+
+	<script src="js/weather-ui/app.js"></script>
+	<script src="js/weather-ui/models.js"></script>
+	<script src="js/weather-ui/collection.js"></script>
+	<script src="js/weather-ui/views.js"></script>
+
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/touchcarousel.css" type="text/css">
+
+
+</head>
+<body>   
+<div style="width:1000px; margin: 0 auto"> 
+<h1>WEATHER PLOTS</h1>
+
+
+<div class="weather_row1_wrap">
+	<div class="weather_row1_informer" style="margin-bottom: 0">
+		<div class="weather_actual_main">
+			<div class="weather_actual_big_ico"></div>
+			<p class="weather_actual_update">18:00</p>
+
+			<p class="weather_actual_temp">+20<span>°C</span></p>
+
+			<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+		</div>
+		<div class="weather_actual_description">
+
+
+			<p class="weather_actual_title">Москва</p>
+
+			<p class="weather_actual_preview">Стихия</p>
+
+			<p class="weather_actual_left">Магнитная обстановка: <a href="">Спокойная</a></p>
+
+			<p class="weather_actual_right"><a href="">Климатическая норма</a></p>
+
+
+		</div>
+		<div class="clear"></div>
+		<div class="days">
+			<div class="day selected">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day ">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day ">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day ">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day ">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day ">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+			</div>
+			<div class="day">
+				<div class="day_month">10 июня</div>
+				<div class="day_week">Сегодня</div>
+				<div class="day_weather_ico">
+					<i class="c-cloudly"></i>
+				</div>
+				<div class="day_temp">+24<span> °C</span></div>
+				<div class="day_temp day_temp_night">+17<span> °C</span></div>
+				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+			</div>
+		</div>
+
+		<div class="weather_plot">
+			<div class="weather_plot_measure">
+						<span class="weather_plot_measure_top">
+							+24
+						</span>
+						<span class="weather_plot_measure_bottom">
+							+12
+						</span>
+			</div>
+			<div class="weather_plot_graph" id="weather_plot"></div>
+
+		</div>
+
+	</div>
+</div>
+<div class="clear"></div>
+<div id="two" class="fullday">
+
+	<div id="carousel-image-and-text" class="touchcarousel">
+
+		<ul class="touchcarousel-container" >
+
+
+			<li class="touchcarousel-item">
+				<div id="weather_plot_big" style="position: absolute; top:0; left:0; width: 0; height: 0;"></div>
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+			<li class="touchcarousel-item">
+
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>6:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>12:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>18:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+				<div class="day_part">
+
+					<h1>0:00</h1>
+
+					<div class="vicious_circle">
+						<div class="vicious_circle_1">
+							<div class="day_weather_ico">
+								<i class="c-cloudly"></i>
+							</div>
+							<div class="day_temp">+24<span> °C</span></div>
+						</div>
+					</div>
+
+					<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+					<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+					<p class="weather_pressure">742 мм рт. ст.</p>
+
+
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="weather_row1_wrap">
+	<div id='one' class="pulldown">
+		<a href="#" class="more"><i></i>Подробнее</a>
+		<a href="#" class="less"><i></i>Свернуть</a>
+	</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+	$(".more").on("click", function () {
+		$("#one").animate({width: 1000}, 240, function () {
+			$("#two").css({height: 0}).show().animate({height: 456});
+			$(this).addClass("opened");
+		});
+		return false;
+	})
+	$(".less").on("click", function () {
+		$("#two").animate({height: 0}, 140, function () {
+			$("#one").animate({width: 720}).removeClass("opened");
+			$(this).hide();
+		});
+		return false;
+	})
+
+
+	var close_handler = $("i.close");
+	$(close_handler).on("click", function () {
+		$(this).parent().remove();
+	});
+
+	$("#addcity").on("click", function () {
+		var new_city = $("<li/>");
+
+		var close_handler = $("<i/>");
+		$(close_handler).addClass("close")
+
+
+		$(close_handler).on("click", function () {
+			$(this).parent().remove();
+		});
+
+		$(new_city).addClass("weather_local_item").html("тверь");
+
+		$(new_city).append(close_handler);
+		$("#cities").append(new_city);
+		return false;
+	});
+
+
+	$("#carousel-image-and-text").touchCarousel({
+		pagingNav: true,
+		snapToItems: true,
+		itemsPerMove: 1,
+		scrollToLast: false,
+		loopItems: false,
+		scrollbar: true
+	});
+
+	carousel = $("#carousel-image-and-text").data("touchCarousel");
+</script>
+</body>
+</html>
+
+
