@@ -1,0 +1,3433 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<forecast>
+	<town name="Амман" id="40270" country="Иордания">
+		<date day="2013-03-26">
+			<tmax>27</tmax>
+			<tmin>12</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>210</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>693</pday>
+			<pnight>692</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>19</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>691</pday>
+			<pnight>695</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>21</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>694</pday>
+			<pnight>696</pnight>
+		</date>
+	</town>
+	<town name="Анкара" id="17128" country="Турция">
+		<date day="2013-03-26">
+			<tmax>16</tmax>
+			<tmin>5</tmin>
+			<prec>6</prec>
+			<prec_prob>66</prec_prob>
+			<wind_dir>150</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>674</pday>
+			<pnight>673</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>14</tmax>
+			<tmin>5</tmin>
+			<prec>4</prec>
+			<prec_prob>84</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>670</pday>
+			<pnight>674</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>13</tmax>
+			<tmin>4</tmin>
+			<prec>3</prec>
+			<prec_prob>86</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>674</pday>
+			<pnight>678</pnight>
+		</date>
+	</town>
+	<town name="Афины" id="16716" country="Греция">
+		<date day="2013-03-26">
+			<tmax>20</tmax>
+			<tmin>13</tmin>
+			<prec>0</prec>
+			<prec_prob>2</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>10</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>750</pday>
+			<pnight>749</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>20</tmax>
+			<tmin>12</tmin>
+			<prec>0</prec>
+			<prec_prob>14</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>18</tmax>
+			<tmin>12</tmin>
+			<prec>0</prec>
+			<prec_prob>22</prec_prob>
+			<wind_dir>140</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>758</pnight>
+		</date>
+	</town>
+	<town name="Ашхабад" id="38880" country="Туркменистан">
+		<date day="2013-03-26">
+			<tmax>21</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>4</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>745</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>27</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>741</pday>
+			<pnight>738</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>29</tmax>
+			<tmin>14</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>736</pday>
+			<pnight>737</pnight>
+		</date>
+	</town>
+	<town name="Бангкок" id="48455" country="Таиланд">
+		<date day="2013-03-26">
+			<tmax>38</tmax>
+			<tmin>28</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>38</tmax>
+			<tmin>28</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>37</tmax>
+			<tmin>28</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Бейрут" id="40100" country="Ливан">
+		<date day="2013-03-26">
+			<tmax>31</tmax>
+			<tmin>19</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>24</tmax>
+			<tmin>17</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>757</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>25</tmax>
+			<tmin>16</tmin>
+			<prec>0</prec>
+			<prec_prob>18</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>759</pday>
+			<pnight>759</pnight>
+		</date>
+	</town>
+	<town name="Белград" id="13272" country="Сербия">
+		<date day="2013-03-26">
+			<tmax>4</tmax>
+			<tmin>-1</tmin>
+			<prec>10</prec>
+			<prec_prob>87</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>743</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>6</tmax>
+			<tmin>1</tmin>
+			<prec>1</prec>
+			<prec_prob>98</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>747</pday>
+			<pnight>749</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>11</tmax>
+			<tmin>1</tmin>
+			<prec>0</prec>
+			<prec_prob>40</prec_prob>
+			<wind_dir>120</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>751</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Берлин" id="10385" country="Германия">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>24</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>760</pday>
+			<pnight>759</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>2</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>28</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>759</pday>
+			<pnight>758</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-4</tmin>
+			<prec>1</prec>
+			<prec_prob>98</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>757</pday>
+			<pnight>756</pnight>
+		</date>
+	</town>
+	<town name="Бишкек" id="38353" country="Киргизия">
+		<date day="2013-03-26">
+			<tmax>21</tmax>
+			<tmin>16</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>696</pday>
+			<pnight>700</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>20</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>30</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>699</pday>
+			<pnight>701</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>24</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>696</pday>
+			<pnight>697</pnight>
+		</date>
+	</town>
+	<town name="Будапешт" id="12843" country="Венгрия">
+		<date day="2013-03-26">
+			<tmax>2</tmax>
+			<tmin>-3</tmin>
+			<prec>16</prec>
+			<prec_prob>99</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, осадки</weather_conditions>
+			<pday>742</pday>
+			<pnight>742</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-2</tmin>
+			<prec>3</prec>
+			<prec_prob>84</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>743</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>6</tmax>
+			<tmin>-1</tmin>
+			<prec>0</prec>
+			<prec_prob>33</prec_prob>
+			<wind_dir>140</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>748</pnight>
+		</date>
+	</town>
+	<town name="Бухарест" id="15420" country="Румыния">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>-2</tmin>
+			<prec>16</prec>
+			<prec_prob>81</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>11</windspeed>
+			<weather_conditions>Облачно, осадки</weather_conditions>
+			<pday>748</pday>
+			<pnight>747</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-1</tmin>
+			<prec>9</prec>
+			<prec_prob>88</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>749</pday>
+			<pnight>751</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>5</tmax>
+			<tmin>-3</tmin>
+			<prec>0</prec>
+			<prec_prob>41</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>757</pnight>
+		</date>
+	</town>
+	<town name="Варшава" id="12375" country="Польша">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>2</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>14</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>23</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Вашингтон" id="72405" country="США">
+		<date day="2013-03-26">
+			<tmax>9</tmax>
+			<tmin>3</tmin>
+			<prec>1</prec>
+			<prec_prob>62</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>753</pday>
+			<pnight>757</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>11</tmax>
+			<tmin>3</tmin>
+			<prec>0</prec>
+			<prec_prob>32</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>10</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>760</pday>
+			<pnight>761</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>10</tmax>
+			<tmin>3</tmin>
+			<prec>0</prec>
+			<prec_prob>24</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>10</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>762</pnight>
+		</date>
+	</town>
+	<town name="Вена" id="11034" country="Австрия">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-2</tmin>
+			<prec>6</prec>
+			<prec_prob>99</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>741</pday>
+			<pnight>740</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-1</tmin>
+			<prec>2</prec>
+			<prec_prob>92</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>741</pday>
+			<pnight>742</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>6</tmax>
+			<tmin>0</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>140</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>744</pday>
+			<pnight>744</pnight>
+		</date>
+	</town>
+	<town name="Вильнюс" id="26730" country="Литва">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>3</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>751</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>751</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>755</pnight>
+		</date>
+	</town>
+	<town name="Дакар" id="61641" country="Сенегал">
+		<date day="2013-03-26">
+			<tmax>26</tmax>
+			<tmin>20</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>11</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>25</tmax>
+			<tmin>19</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>25</tmax>
+			<tmin>19</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>756</pnight>
+		</date>
+	</town>
+	<town name="Дамаск" id="40080" country="Сирия">
+		<date day="2013-03-26">
+			<tmax>28</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>706</pday>
+			<pnight>705</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>22</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>17</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>10</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>703</pday>
+			<pnight>708</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>24</tmax>
+			<tmin>7</tmin>
+			<prec>0</prec>
+			<prec_prob>14</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>706</pday>
+			<pnight>709</pnight>
+		</date>
+	</town>
+	<town name="Дели" id="42182" country="Индия">
+		<date day="2013-03-26">
+			<tmax>31</tmax>
+			<tmin>17</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>737</pday>
+			<pnight>737</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>33</tmax>
+			<tmin>17</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>736</pday>
+			<pnight>737</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>34</tmax>
+			<tmin>19</tmin>
+			<prec>0</prec>
+			<prec_prob>21</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>737</pday>
+			<pnight>737</pnight>
+		</date>
+	</town>
+	<town name="Дублин" id="3969" country="Ирландия">
+		<date day="2013-03-26">
+			<tmax>4</tmax>
+			<tmin>0</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>10</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>4</tmax>
+			<tmin>-1</tmin>
+			<prec>1</prec>
+			<prec_prob>91</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>4</tmax>
+			<tmin>-1</tmin>
+			<prec>0</prec>
+			<prec_prob>36</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Душанбе" id="38836" country="Таджикистан">
+		<date day="2013-03-26">
+			<tmax>21</tmax>
+			<tmin>11</tmin>
+			<prec>0</prec>
+			<prec_prob>31</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>693</pday>
+			<pnight>696</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>24</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>9</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>692</pday>
+			<pnight>693</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>26</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>688</pday>
+			<pnight>692</pnight>
+		</date>
+	</town>
+	<town name="Загреб" id="14240" country="Хорватия">
+		<date day="2013-03-26">
+			<tmax>2</tmax>
+			<tmin>-2</tmin>
+			<prec>11</prec>
+			<prec_prob>99</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>742</pday>
+			<pnight>743</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>5</tmax>
+			<tmin>-2</tmin>
+			<prec>1</prec>
+			<prec_prob>85</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>745</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>7</tmax>
+			<tmin>-2</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>747</pday>
+			<pnight>747</pnight>
+		</date>
+	</town>
+	<town name="Иерусалим" id="40184" country="Израиль">
+		<date day="2013-03-26">
+			<tmax>26</tmax>
+			<tmin>6</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>692</pday>
+			<pnight>693</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>18</tmax>
+			<tmin>7</tmin>
+			<prec>0</prec>
+			<prec_prob>27</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>692</pday>
+			<pnight>696</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>20</tmax>
+			<tmin>5</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>695</pday>
+			<pnight>697</pnight>
+		</date>
+	</town>
+	<town name="Кабул" id="40948" country="Афганистан">
+		<date day="2013-03-26">
+			<tmax>16</tmax>
+			<tmin>3</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>610</pday>
+			<pnight>616</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>16</tmax>
+			<tmin>4</tmin>
+			<prec>1</prec>
+			<prec_prob>63</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>610</pday>
+			<pnight>616</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>16</tmax>
+			<tmin>3</tmin>
+			<prec>1</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>610</pday>
+			<pnight>616</pnight>
+		</date>
+	</town>
+	<town name="Каир" id="62366" country="Египет">
+		<date day="2013-03-26">
+			<tmax>31</tmax>
+			<tmin>17</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>12</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>750</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>26</tmax>
+			<tmin>15</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>753</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>29</tmax>
+			<tmin>16</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>755</pnight>
+		</date>
+	</town>
+	<town name="Киев" id="33345" country="Украина">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>20</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>746</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-1</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>746</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-7</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>751</pday>
+			<pnight>753</pnight>
+		</date>
+	</town>
+	<town name="Кишинев" id="33815" country="Молдавия">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-5</tmin>
+			<prec>7</prec>
+			<prec_prob>93</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, снег</weather_conditions>
+			<pday>744</pday>
+			<pnight>743</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-5</tmin>
+			<prec>3</prec>
+			<prec_prob>75</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>743</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-4</tmin>
+			<prec>2</prec>
+			<prec_prob>67</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>748</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Копенгаген" id="6180" country="Дания">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>-3</tmin>
+			<prec>0</prec>
+			<prec_prob>28</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>768</pday>
+			<pnight>767</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-2</tmin>
+			<prec>0</prec>
+			<prec_prob>44</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>767</pday>
+			<pnight>766</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>3</tmax>
+			<tmin>-2</tmin>
+			<prec>0</prec>
+			<prec_prob>29</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>766</pday>
+			<pnight>765</pnight>
+		</date>
+	</town>
+	<town name="Куала-лумпур" id="48647" country="Малайзия">
+		<date day="2013-03-26">
+			<tmax>34</tmax>
+			<tmin>25</tmin>
+			<prec>5</prec>
+			<prec_prob>72</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>34</tmax>
+			<tmin>25</tmin>
+			<prec>7</prec>
+			<prec_prob>67</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>34</tmax>
+			<tmin>25</tmin>
+			<prec>5</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>755</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Эль-Кувейт" id="40582" country="Кувейт">
+		<date day="2013-03-26">
+			<tmax>27</tmax>
+			<tmin>14</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>755</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>30</tmax>
+			<tmin>14</tmin>
+			<prec>0</prec>
+			<prec_prob>17</prec_prob>
+			<wind_dir>170</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>754</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>30</tmax>
+			<tmin>18</tmin>
+			<prec>1</prec>
+			<prec_prob>92</prec_prob>
+			<wind_dir>160</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>752</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Лиссабон" id="8579" country="Португалия">
+		<date day="2013-03-26">
+			<tmax>17</tmax>
+			<tmin>13</tmin>
+			<prec>15</prec>
+			<prec_prob>97</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>15</windspeed>
+			<weather_conditions>Облачно, дождь</weather_conditions>
+			<pday>747</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>17</tmax>
+			<tmin>12</tmin>
+			<prec>4</prec>
+			<prec_prob>88</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>744</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>18</tmax>
+			<tmin>11</tmin>
+			<prec>0</prec>
+			<prec_prob>44</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Лондон" id="3772" country="Великобритания">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>0</tmin>
+			<prec>0</prec>
+			<prec_prob>21</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>758</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>4</tmax>
+			<tmin>-1</tmin>
+			<prec>0</prec>
+			<prec_prob>33</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>757</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>5</tmax>
+			<tmin>-1</tmin>
+			<prec>0</prec>
+			<prec_prob>17</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>758</pnight>
+		</date>
+	</town>
+	<town name="Любляна" id="14015" country="Словения">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>-2</tmin>
+			<prec>4</prec>
+			<prec_prob>85</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>726</pday>
+			<pnight>727</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>5</tmax>
+			<tmin>-3</tmin>
+			<prec>0</prec>
+			<prec_prob>44</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>728</pday>
+			<pnight>730</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>8</tmax>
+			<tmin>-1</tmin>
+			<prec>1</prec>
+			<prec_prob>61</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>731</pday>
+			<pnight>731</pnight>
+		</date>
+	</town>
+	<town name="Мадрид" id="8221" country="Испания">
+		<date day="2013-03-26">
+			<tmax>16</tmax>
+			<tmin>9</tmin>
+			<prec>6</prec>
+			<prec_prob>75</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>13</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>705</pday>
+			<pnight>704</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>16</tmax>
+			<tmin>9</tmin>
+			<prec>5</prec>
+			<prec_prob>89</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>701</pday>
+			<pnight>702</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>17</tmax>
+			<tmin>8</tmin>
+			<prec>2</prec>
+			<prec_prob>77</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>704</pday>
+			<pnight>708</pnight>
+		</date>
+	</town>
+	<town name="Мехико" id="76679" country="Мексика">
+		<date day="2013-03-26">
+			<tmax>19</tmax>
+			<tmin>8</tmin>
+			<prec>4</prec>
+			<prec_prob>62</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>582</pday>
+			<pnight>589</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>22</tmax>
+			<tmin>8</tmin>
+			<prec>1</prec>
+			<prec_prob>64</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>583</pday>
+			<pnight>589</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>23</tmax>
+			<tmin>10</tmin>
+			<prec>1</prec>
+			<prec_prob>64</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>583</pday>
+			<pnight>589</pnight>
+		</date>
+	</town>
+	<town name="Минск" id="26850" country="Беларусь">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>743</pday>
+			<pnight>743</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>38</prec_prob>
+			<wind_dir>10</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>743</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>748</pnight>
+		</date>
+	</town>
+	<town name="Москва" id="27612" country="Россия">
+		<date day="2013-03-26">
+			<tmax>-4</tmax>
+			<tmin>-9</tmin>
+			<prec>1</prec>
+			<prec_prob>72</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>745</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>749</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Осло" id="1384" country="Норвегия">
+		<date day="2013-03-26">
+			<tmax>4</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>4</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>3</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>36</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>0</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>748</pnight>
+		</date>
+	</town>
+	<town name="Париж" id="7149" country="Франция">
+		<date day="2013-03-26">
+			<tmax>7</tmax>
+			<tmin>1</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>747</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>7</tmax>
+			<tmin>-2</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>7</tmax>
+			<tmin>1</tmin>
+			<prec>0</prec>
+			<prec_prob>15</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>748</pnight>
+		</date>
+	</town>
+	<town name="Пекин" id="54511" country="Китай">
+		<date day="2013-03-26">
+			<tmax>15</tmax>
+			<tmin>3</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>18</tmax>
+			<tmin>5</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>750</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>12</tmax>
+			<tmin>4</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>761</pday>
+			<pnight>761</pnight>
+		</date>
+	</town>
+	<town name="Прага" id="11520" country="Чехия">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-5</tmin>
+			<prec>1</prec>
+			<prec_prob>56</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>731</pday>
+			<pnight>731</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-5</tmin>
+			<prec>3</prec>
+			<prec_prob>98</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>731</pday>
+			<pnight>731</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>4</tmax>
+			<tmin>-4</tmin>
+			<prec>1</prec>
+			<prec_prob>98</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>730</pday>
+			<pnight>730</pnight>
+		</date>
+	</town>
+	<town name="Пхеньян" id="47058" country="Северная Корея">
+		<date day="2013-03-26">
+			<tmax>10</tmax>
+			<tmin>-1</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>764</pday>
+			<pnight>761</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>13</tmax>
+			<tmin>0</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>760</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>10</tmax>
+			<tmin>2</tmin>
+			<prec>0</prec>
+			<prec_prob>20</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>761</pnight>
+		</date>
+	</town>
+	<town name="Рабат" id="60135" country="Марокко">
+		<date day="2013-03-26">
+			<tmax>21</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>20</tmax>
+			<tmin>13</tmin>
+			<prec>2</prec>
+			<prec_prob>89</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>753</pday>
+			<pnight>752</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>21</tmax>
+			<tmin>13</tmin>
+			<prec>3</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>753</pday>
+			<pnight>755</pnight>
+		</date>
+	</town>
+	<town name="Рейкьявик" id="4030" country="Исландия">
+		<date day="2013-03-26">
+			<tmax>6</tmax>
+			<tmin>2</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>764</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>7</tmax>
+			<tmin>2</tmin>
+			<prec>1</prec>
+			<prec_prob>81</prec_prob>
+			<wind_dir>130</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>758</pday>
+			<pnight>757</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>7</tmax>
+			<tmin>3</tmin>
+			<prec>0</prec>
+			<prec_prob>44</prec_prob>
+			<wind_dir>120</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>756</pnight>
+		</date>
+	</town>
+	<town name="Рига" id="26422" country="Латвия">
+		<date day="2013-03-26">
+			<tmax>2</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>22</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>767</pday>
+			<pnight>766</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>10</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>767</pday>
+			<pnight>768</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>150</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>770</pday>
+			<pnight>770</pnight>
+		</date>
+	</town>
+	<town name="Рим" id="16242" country="Италия">
+		<date day="2013-03-26">
+			<tmax>15</tmax>
+			<tmin>7</tmin>
+			<prec>2</prec>
+			<prec_prob>76</prec_prob>
+			<wind_dir>210</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>750</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>15</tmax>
+			<tmin>6</tmin>
+			<prec>3</prec>
+			<prec_prob>86</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>752</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>16</tmax>
+			<tmin>7</tmin>
+			<prec>7</prec>
+			<prec_prob>98</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>755</pday>
+			<pnight>756</pnight>
+		</date>
+	</town>
+	<town name="София" id="15614" country="Болгария">
+		<date day="2013-03-26">
+			<tmax>10</tmax>
+			<tmin>5</tmin>
+			<prec>3</prec>
+			<prec_prob>82</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>699</pday>
+			<pnight>699</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>7</tmax>
+			<tmin>3</tmin>
+			<prec>4</prec>
+			<prec_prob>92</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>701</pday>
+			<pnight>704</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>10</tmax>
+			<tmin>2</tmin>
+			<prec>2</prec>
+			<prec_prob>69</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>706</pday>
+			<pnight>709</pnight>
+		</date>
+	</town>
+	<town name="Стокгольм" id="2464" country="Швеция">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>29</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>768</pday>
+			<pnight>768</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>4</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>767</pday>
+			<pnight>767</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>3</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>767</pday>
+			<pnight>767</pnight>
+		</date>
+	</town>
+	<town name="Таллин" id="26038" country="Эстония">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>4</prec_prob>
+			<wind_dir>10</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>764</pday>
+			<pnight>764</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>764</pday>
+			<pnight>765</pnight>
+		</date>
+	</town>
+	<town name="Ташкент" id="38457" country="Узбекистан">
+		<date day="2013-03-26">
+			<tmax>16</tmax>
+			<tmin>12</tmin>
+			<prec>9</prec>
+			<prec_prob>58</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>0</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>720</pday>
+			<pnight>722</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>22</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>10</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>722</pday>
+			<pnight>721</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>26</tmax>
+			<tmin>10</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>716</pday>
+			<pnight>717</pnight>
+		</date>
+	</town>
+	<town name="Тбилиси" id="37549" country="Грузия">
+		<date day="2013-03-26">
+			<tmax>19</tmax>
+			<tmin>5</tmin>
+			<prec>0</prec>
+			<prec_prob>2</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>721</pday>
+			<pnight>719</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>21</tmax>
+			<tmin>9</tmin>
+			<prec>1</prec>
+			<prec_prob>75</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>716</pday>
+			<pnight>715</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>21</tmax>
+			<tmin>10</tmin>
+			<prec>1</prec>
+			<prec_prob>69</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>716</pday>
+			<pnight>718</pnight>
+		</date>
+	</town>
+	<town name="Тегеран" id="40754" country="Иран">
+		<date day="2013-03-26">
+			<tmax>22</tmax>
+			<tmin>9</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>660</pday>
+			<pnight>664</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>24</tmax>
+			<tmin>11</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>658</pday>
+			<pnight>661</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>24</tmax>
+			<tmin>13</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>657</pday>
+			<pnight>661</pnight>
+		</date>
+	</town>
+	<town name="Токио" id="47662" country="Япония">
+		<date day="2013-03-26">
+			<tmax>13</tmax>
+			<tmin>5</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>761</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>14</tmax>
+			<tmin>8</tmin>
+			<prec>3</prec>
+			<prec_prob>78</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>764</pday>
+			<pnight>761</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>20</tmax>
+			<tmin>12</tmin>
+			<prec>0</prec>
+			<prec_prob>31</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>759</pday>
+			<pnight>757</pnight>
+		</date>
+	</town>
+	<town name="Триполи" id="62010" country="Ливия">
+		<date day="2013-03-26">
+			<tmax>27</tmax>
+			<tmin>13</tmin>
+			<prec>0</prec>
+			<prec_prob>1</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>751</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>30</tmax>
+			<tmin>14</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>749</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>32</tmax>
+			<tmin>16</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>749</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Тунис" id="60715" country="Тунис">
+		<date day="2013-03-26">
+			<tmax>23</tmax>
+			<tmin>11</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>12</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>755</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>24</tmax>
+			<tmin>13</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, небольшой дождь</weather_conditions>
+			<pday>756</pday>
+			<pnight>755</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>23</tmax>
+			<tmin>12</tmin>
+			<prec>7</prec>
+			<prec_prob>83</prec_prob>
+			<wind_dir>120</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>757</pday>
+			<pnight>757</pnight>
+		</date>
+	</town>
+	<town name="Улан-батор" id="44292" country="Монголия">
+		<date day="2013-03-26">
+			<tmax>0</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>26</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>644</pday>
+			<pnight>649</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>648</pday>
+			<pnight>653</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-15</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>652</pday>
+			<pnight>653</pnight>
+		</date>
+	</town>
+	<town name="Хельсинки" id="2974" country="Финляндия">
+		<date day="2013-03-26">
+			<tmax>2</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>14</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>761</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>2</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>26</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>3</tmax>
+			<tmin>-7</tmin>
+			<prec>0</prec>
+			<prec_prob>42</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>763</pnight>
+		</date>
+	</town>
+	<town name="Анадырь" id="25563" country="Россия" region="Чукотский а.о.">
+		<date day="2013-03-26">
+			<tmax>-20</tmax>
+			<tmin>-27</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>10</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>768</pday>
+			<pnight>767</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-20</tmax>
+			<tmin>-27</tmin>
+			<prec>0</prec>
+			<prec_prob>5</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>765</pday>
+			<pnight>764</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-20</tmax>
+			<tmin>-26</tmin>
+			<prec>0</prec>
+			<prec_prob>22</prec_prob>
+			<wind_dir>10</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>760</pnight>
+		</date>
+	</town>
+	<town name="Архангельск" id="22550" country="Россия" region="Архангельская обл.">
+		<date day="2013-03-26">
+			<tmax>-7</tmax>
+			<tmin>-23</tmin>
+			<prec>0</prec>
+			<prec_prob>20</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>766</pday>
+			<pnight>765</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-7</tmax>
+			<tmin>-21</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>763</pday>
+			<pnight>762</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-5</tmax>
+			<tmin>-20</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>761</pnight>
+		</date>
+	</town>
+	<town name="Астрахань" id="34880" country="Россия" region="Астраханская  обл.">
+		<date day="2013-03-26">
+			<tmax>6</tmax>
+			<tmin>-4</tmin>
+			<prec>2</prec>
+			<prec_prob>57</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>764</pday>
+			<pnight>763</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>9</tmax>
+			<tmin>0</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>762</pday>
+			<pnight>760</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>10</tmax>
+			<tmin>1</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>761</pday>
+			<pnight>763</pnight>
+		</date>
+	</town>
+	<town name="Владивосток" id="31960" country="Россия" region="Приморский край">
+		<date day="2013-03-26">
+			<tmax>2</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>19</prec_prob>
+			<wind_dir>210</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>746</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>4</tmax>
+			<tmin>-2</tmin>
+			<prec>3</prec>
+			<prec_prob>60</prec_prob>
+			<wind_dir>150</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>742</pday>
+			<pnight>740</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-2</tmin>
+			<prec>0</prec>
+			<prec_prob>37</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>741</pday>
+			<pnight>743</pnight>
+		</date>
+	</town>
+	<town name="Владикавказ" id="37228" country="Россия" region="Северная Осетия-Алания респ.">
+		<date day="2013-03-26">
+			<tmax>18</tmax>
+			<tmin>5</tmin>
+			<prec>0</prec>
+			<prec_prob>23</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>699</pday>
+			<pnight>698</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>19</tmax>
+			<tmin>8</tmin>
+			<prec>0</prec>
+			<prec_prob>9</prec_prob>
+			<wind_dir>120</wind_dir>
+			<windspeed>0</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>695</pday>
+			<pnight>696</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>18</tmax>
+			<tmin>8</tmin>
+			<prec>0</prec>
+			<prec_prob>15</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>696</pday>
+			<pnight>699</pnight>
+		</date>
+	</town>
+	<town name="Владимир" id="27532" country="Россия" region="Владимирская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-11</tmin>
+			<prec>3</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>739</pday>
+			<pnight>740</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-5</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>78</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>742</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-3</tmax>
+			<tmin>-13</tmin>
+			<prec>0</prec>
+			<prec_prob>41</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Волгоград" id="34560" country="Россия" region="Волгоградская обл.">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-8</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>746</pday>
+			<pnight>747</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-6</tmin>
+			<prec>2</prec>
+			<prec_prob>65</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>747</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-4</tmin>
+			<prec>0</prec>
+			<prec_prob>36</prec_prob>
+			<wind_dir>20</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>750</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Вологда" id="27037" country="Россия" region="Вологодская обл.">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-13</tmin>
+			<prec>2</prec>
+			<prec_prob>56</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>747</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-7</tmax>
+			<tmin>-16</tmin>
+			<prec>2</prec>
+			<prec_prob>69</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>747</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-3</tmax>
+			<tmin>-15</tmin>
+			<prec>1</prec>
+			<prec_prob>79</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>750</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Воронеж" id="34123" country="Россия" region="Воронежская обл.">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-11</tmin>
+			<prec>2</prec>
+			<prec_prob>70</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>744</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>749</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Екатеринбург" id="28440" country="Россия" region="Свердловская обл.">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-7</tmin>
+			<prec>6</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>728</pday>
+			<pnight>724</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-6</tmin>
+			<prec>3</prec>
+			<prec_prob>78</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>723</pday>
+			<pnight>728</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>35</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>733</pday>
+			<pnight>735</pnight>
+		</date>
+	</town>
+	<town name="Иваново" id="27347" country="Россия" region="Ивановская обл.">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-11</tmin>
+			<prec>4</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>340</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>744</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-6</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>76</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>746</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>78</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>750</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Иркутск" id="30710" country="Россия" region="Иркутская обл.">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-12</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>724</pday>
+			<pnight>725</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-13</tmin>
+			<prec>0</prec>
+			<prec_prob>34</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>726</pday>
+			<pnight>729</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-15</tmin>
+			<prec>0</prec>
+			<prec_prob>17</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>729</pday>
+			<pnight>725</pnight>
+		</date>
+	</town>
+	<town name="Йошкар-Ола" id="27485" country="Россия" region="Марий Эл респ.">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-7</tmin>
+			<prec>12</prec>
+			<prec_prob>68</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>739</pday>
+			<pnight>740</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-8</tmin>
+			<prec>2</prec>
+			<prec_prob>74</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>743</pday>
+			<pnight>747</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>66</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>749</pday>
+			<pnight>753</pnight>
+		</date>
+	</town>
+	<town name="Казань" id="27595" country="Россия" region="Татарстан респ.">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-4</tmin>
+			<prec>8</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, снег</weather_conditions>
+			<pday>738</pday>
+			<pnight>738</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-2</tmax>
+			<tmin>-6</tmin>
+			<prec>1</prec>
+			<prec_prob>80</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>741</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-5</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>26</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>749</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Калининград" id="26702" country="Россия" region="Калининградская обл.">
+		<date day="2013-03-26">
+			<tmax>3</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>765</pday>
+			<pnight>764</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>11</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>764</pday>
+			<pnight>765</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>3</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>17</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>766</pday>
+			<pnight>765</pnight>
+		</date>
+	</town>
+	<town name="Кемерово" id="29642" country="Россия" region="Кемеровская обл.">
+		<date day="2013-03-26">
+			<tmax>-4</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>746</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-12</tmin>
+			<prec>1</prec>
+			<prec_prob>57</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>742</pday>
+			<pnight>741</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-6</tmin>
+			<prec>4</prec>
+			<prec_prob>80</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>741</pday>
+			<pnight>739</pnight>
+		</date>
+	</town>
+	<town name="Киров" id="27199" country="Россия" region="Кировская обл.">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-7</tmin>
+			<prec>5</prec>
+			<prec_prob>68</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>737</pday>
+			<pnight>737</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-8</tmin>
+			<prec>2</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>737</pday>
+			<pnight>740</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-3</tmax>
+			<tmin>-10</tmin>
+			<prec>2</prec>
+			<prec_prob>77</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>743</pday>
+			<pnight>745</pnight>
+		</date>
+	</town>
+	<town name="Кострома" id="27333" country="Россия" region="Костромская обл.">
+		<date day="2013-03-26">
+			<tmax>-6</tmax>
+			<tmin>-10</tmin>
+			<prec>3</prec>
+			<prec_prob>61</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>744</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-6</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>69</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>746</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>76</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>749</pday>
+			<pnight>753</pnight>
+		</date>
+	</town>
+	<town name="Краснодар" id="34929" country="Россия" region="Краснодарский край">
+		<date day="2013-03-26">
+			<tmax>9</tmax>
+			<tmin>-3</tmin>
+			<prec>0</prec>
+			<prec_prob>19</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>754</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>10</tmax>
+			<tmin>3</tmin>
+			<prec>13</prec>
+			<prec_prob>91</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>751</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>11</tmax>
+			<tmin>4</tmin>
+			<prec>6</prec>
+			<prec_prob>73</prec_prob>
+			<wind_dir>120</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>754</pday>
+			<pnight>757</pnight>
+		</date>
+	</town>
+	<town name="Красноярск" id="29570" country="Россия" region="Красноярский край">
+		<date day="2013-03-26">
+			<tmax>-6</tmax>
+			<tmin>-15</tmin>
+			<prec>2</prec>
+			<prec_prob>79</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>744</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-17</tmin>
+			<prec>0</prec>
+			<prec_prob>8</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>745</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-11</tmin>
+			<prec>2</prec>
+			<prec_prob>64</prec_prob>
+			<wind_dir>160</wind_dir>
+			<windspeed>1</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>741</pday>
+			<pnight>740</pnight>
+		</date>
+	</town>
+	<town name="Магадан" id="25913" country="Россия" region="Магаданская обл.">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-5</tmin>
+			<prec>2</prec>
+			<prec_prob>81</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>750</pday>
+			<pnight>752</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>6</prec_prob>
+			<wind_dir>40</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>753</pday>
+			<pnight>755</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-7</tmax>
+			<tmin>-11</tmin>
+			<prec>0</prec>
+			<prec_prob>10</prec_prob>
+			<wind_dir>30</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>757</pnight>
+		</date>
+	</town>
+	<town name="Мурманск" id="22113" country="Россия" region="Мурманская обл.">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-9</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>761</pday>
+			<pnight>759</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-2</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>39</prec_prob>
+			<wind_dir>160</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-2</tmax>
+			<tmin>-10</tmin>
+			<prec>1</prec>
+			<prec_prob>80</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>754</pday>
+			<pnight>753</pnight>
+		</date>
+	</town>
+	<town name="Нижний Новгород" id="27459" country="Россия" region="Нижегородская область">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-9</tmin>
+			<prec>5</prec>
+			<prec_prob>74</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>738</pday>
+			<pnight>739</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-5</tmax>
+			<tmin>-9</tmin>
+			<prec>1</prec>
+			<prec_prob>81</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>741</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-5</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>82</prec_prob>
+			<wind_dir>280</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>747</pday>
+			<pnight>749</pnight>
+		</date>
+	</town>
+	<town name="Омск" id="28698" country="Россия" region="Омская обл.">
+		<date day="2013-03-26">
+			<tmax>-2</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>36</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>12</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>3</prec>
+			<prec_prob>83</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>748</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>14</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>751</pday>
+			<pnight>753</pnight>
+		</date>
+	</town>
+	<town name="Пенза" id="27962" country="Россия" region="Пензенская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-9</tmin>
+			<prec>2</prec>
+			<prec_prob>91</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>736</pday>
+			<pnight>739</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-10</tmin>
+			<prec>1</prec>
+			<prec_prob>85</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>741</pday>
+			<pnight>744</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-3</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>747</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Пермь" id="28224" country="Россия" region="Пермская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-7</tmin>
+			<prec>4</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>80</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>738</pday>
+			<pnight>735</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-1</tmax>
+			<tmin>-8</tmin>
+			<prec>4</prec>
+			<prec_prob>79</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>733</pday>
+			<pnight>738</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-9</tmin>
+			<prec>2</prec>
+			<prec_prob>75</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>742</pday>
+			<pnight>744</pnight>
+		</date>
+	</town>
+	<town name="Санкт-Петербург" id="26063" country="Россия" region="Ленинградская обл.">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-10</tmin>
+			<prec>1</prec>
+			<prec_prob>61</prec_prob>
+			<wind_dir>350</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>764</pday>
+			<pnight>764</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-7</tmin>
+			<prec>0</prec>
+			<prec_prob>28</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>765</pday>
+			<pnight>766</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>37</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>766</pday>
+			<pnight>767</pnight>
+		</date>
+	</town>
+	<town name="Самара" id="28807" country="Россия" region="Самарская обл.">
+		<date day="2013-03-26">
+			<tmax>0</tmax>
+			<tmin>-7</tmin>
+			<prec>2</prec>
+			<prec_prob>71</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>747</pday>
+			<pnight>749</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>21</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>756</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>757</pday>
+			<pnight>760</pnight>
+		</date>
+	</town>
+	<town name="Саратов" id="34171" country="Россия" region="Саратовская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-8</tmin>
+			<prec>1</prec>
+			<prec_prob>79</prec_prob>
+			<wind_dir>270</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>739</pday>
+			<pnight>742</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>18</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>745</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-3</tmax>
+			<tmin>-8</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>751</pnight>
+		</date>
+	</town>
+	<town name="Ставрополь" id="34949" country="Россия" region="Ставропольский край">
+		<date day="2013-03-26">
+			<tmax>7</tmax>
+			<tmin>-5</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>719</pday>
+			<pnight>718</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>8</tmax>
+			<tmin>1</tmin>
+			<prec>11</prec>
+			<prec_prob>85</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>715</pday>
+			<pnight>716</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>10</tmax>
+			<tmin>2</tmin>
+			<prec>13</prec>
+			<prec_prob>90</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшой дождь</weather_conditions>
+			<pday>718</pday>
+			<pnight>719</pnight>
+		</date>
+	</town>
+	<town name="Тамбов" id="27947" country="Россия" region="Тамбовская обл.">
+		<date day="2013-03-26">
+			<tmax>-4</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>74</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>743</pday>
+			<pnight>745</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>13</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>753</pday>
+			<pnight>756</pnight>
+		</date>
+	</town>
+	<town name="Тверь" id="27402" country="Россия" region="Тверская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>62</prec_prob>
+			<wind_dir>330</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>747</pday>
+			<pnight>747</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>7</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>748</pday>
+			<pnight>750</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-12</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>754</pnight>
+		</date>
+	</town>
+	<town name="Томск" id="29430" country="Россия" region="Томская обл.">
+		<date day="2013-03-26">
+			<tmax>-5</tmax>
+			<tmin>-17</tmin>
+			<prec>0</prec>
+			<prec_prob>20</prec_prob>
+			<wind_dir>50</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>758</pday>
+			<pnight>757</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-1</tmax>
+			<tmin>-13</tmin>
+			<prec>0</prec>
+			<prec_prob>18</prec_prob>
+			<wind_dir>110</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>753</pday>
+			<pnight>752</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>2</tmax>
+			<tmin>-6</tmin>
+			<prec>3</prec>
+			<prec_prob>87</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>750</pday>
+			<pnight>750</pnight>
+		</date>
+	</town>
+	<town name="Тюмень" id="28367" country="Россия" region="Тюменская обл.">
+		<date day="2013-03-26">
+			<tmax>0</tmax>
+			<tmin>-9</tmin>
+			<prec>5</prec>
+			<prec_prob>58</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>749</pday>
+			<pnight>743</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-6</tmin>
+			<prec>1</prec>
+			<prec_prob>57</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>741</pday>
+			<pnight>746</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>0</prec>
+			<prec_prob>34</prec_prob>
+			<wind_dir>250</wind_dir>
+			<windspeed>4</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>749</pday>
+			<pnight>752</pnight>
+		</date>
+	</town>
+	<town name="Улан-удэ" id="30823" country="Россия" region="Бурятия респ.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>11</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>716</pday>
+			<pnight>719</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>12</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>720</pday>
+			<pnight>723</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-1</tmax>
+			<tmin>-14</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>723</pday>
+			<pnight>723</pnight>
+		</date>
+	</town>
+	<town name="Уфа" id="28722" country="Россия" region="Башкортостан респ.">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-5</tmin>
+			<prec>6</prec>
+			<prec_prob>67</prec_prob>
+			<wind_dir>220</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>739</pday>
+			<pnight>741</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-8</tmin>
+			<prec>3</prec>
+			<prec_prob>82</prec_prob>
+			<wind_dir>240</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>742</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-9</tmin>
+			<prec>1</prec>
+			<prec_prob>64</prec_prob>
+			<wind_dir>210</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>751</pday>
+			<pnight>751</pnight>
+		</date>
+	</town>
+	<town name="Хабаровск" id="31735" country="Россия" region="Хабаровский край">
+		<date day="2013-03-26">
+			<tmax>-1</tmax>
+			<tmin>-10</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>752</pday>
+			<pnight>752</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-8</tmin>
+			<prec>11</prec>
+			<prec_prob>85</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>749</pday>
+			<pnight>748</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>1</tmax>
+			<tmin>-7</tmin>
+			<prec>3</prec>
+			<prec_prob>80</prec_prob>
+			<wind_dir>260</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>747</pday>
+			<pnight>747</pnight>
+		</date>
+	</town>
+	<town name="Ханты-мансийск" id="23933" country="Россия" region="Ханты-Мансийский а.о.">
+		<date day="2013-03-26">
+			<tmax>-9</tmax>
+			<tmin>-17</tmin>
+			<prec>0</prec>
+			<prec_prob>15</prec_prob>
+			<wind_dir>90</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>765</pday>
+			<pnight>760</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-6</tmax>
+			<tmin>-13</tmin>
+			<prec>5</prec>
+			<prec_prob>79</prec_prob>
+			<wind_dir>100</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>754</pday>
+			<pnight>755</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-5</tmax>
+			<tmin>-11</tmin>
+			<prec>1</prec>
+			<prec_prob>74</prec_prob>
+			<wind_dir>60</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>756</pday>
+			<pnight>758</pnight>
+		</date>
+	</town>
+	<town name="Челябинск" id="28642" country="Россия" region="Челябинская обл.">
+		<date day="2013-03-26">
+			<tmax>1</tmax>
+			<tmin>-6</tmin>
+			<prec>10</prec>
+			<prec_prob>76</prec_prob>
+			<wind_dir>70</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>730</pday>
+			<pnight>727</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>0</tmax>
+			<tmin>-8</tmin>
+			<prec>1</prec>
+			<prec_prob>75</prec_prob>
+			<wind_dir>230</wind_dir>
+			<windspeed>7</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>729</pday>
+			<pnight>735</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>0</tmax>
+			<tmin>-9</tmin>
+			<prec>0</prec>
+			<prec_prob>32</prec_prob>
+			<wind_dir>190</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>739</pday>
+			<pnight>740</pnight>
+		</date>
+	</town>
+	<town name="Чита" id="30758" country="Россия" region="Читинская обл.">
+		<date day="2013-03-26">
+			<tmax>-3</tmax>
+			<tmin>-13</tmin>
+			<prec>1</prec>
+			<prec_prob>83</prec_prob>
+			<wind_dir>300</wind_dir>
+			<windspeed>12</windspeed>
+			<weather_conditions>Облачно, небольшой снег</weather_conditions>
+			<pday>692</pday>
+			<pnight>694</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-4</tmax>
+			<tmin>-15</tmin>
+			<prec>1</prec>
+			<prec_prob>66</prec_prob>
+			<wind_dir>310</wind_dir>
+			<windspeed>6</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>698</pday>
+			<pnight>703</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-5</tmax>
+			<tmin>-16</tmin>
+			<prec>1</prec>
+			<prec_prob>69</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>704</pday>
+			<pnight>707</pnight>
+		</date>
+	</town>
+	<town name="Южно-сахалинск" id="32150" country="Россия" region="Сахалинская обл.">
+		<date day="2013-03-26">
+			<tmax>0</tmax>
+			<tmin>-10</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>290</wind_dir>
+			<windspeed>5</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>756</pday>
+			<pnight>758</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>3</tmax>
+			<tmin>-11</tmin>
+			<prec>5</prec>
+			<prec_prob>61</prec_prob>
+			<wind_dir>200</wind_dir>
+			<windspeed>8</windspeed>
+			<weather_conditions>Переменная облачность, небольшие осадки</weather_conditions>
+			<pday>761</pday>
+			<pnight>760</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>4</tmax>
+			<tmin>-4</tmin>
+			<prec>8</prec>
+			<prec_prob>72</prec_prob>
+			<wind_dir>180</wind_dir>
+			<windspeed>9</windspeed>
+			<weather_conditions>Облачно, небольшие осадки</weather_conditions>
+			<pday>756</pday>
+			<pnight>749</pnight>
+		</date>
+	</town>
+	<town name="Якутск" id="24959" country="Россия" region="Саха(Якутия) респ.">
+		<date day="2013-03-26">
+			<tmax>-6</tmax>
+			<tmin>-19</tmin>
+			<prec>0</prec>
+			<prec_prob>39</prec_prob>
+			<wind_dir>0</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>752</pday>
+			<pnight>753</pnight>
+		</date>
+		<date day="2013-03-27">
+			<tmax>-3</tmax>
+			<tmin>-16</tmin>
+			<prec>0</prec>
+			<prec_prob>45</prec_prob>
+			<wind_dir>10</wind_dir>
+			<windspeed>2</windspeed>
+			<weather_conditions>Переменная облачность, без осадков</weather_conditions>
+			<pday>755</pday>
+			<pnight>758</pnight>
+		</date>
+		<date day="2013-03-28">
+			<tmax>-4</tmax>
+			<tmin>-14</tmin>
+			<prec>1</prec>
+			<prec_prob>55</prec_prob>
+			<wind_dir>320</wind_dir>
+			<windspeed>3</windspeed>
+			<weather_conditions>Переменная облачность, небольшой снег</weather_conditions>
+			<pday>759</pday>
+			<pnight>760</pnight>
+		</date>
+	</town>
+</forecast>
