@@ -4,13 +4,22 @@
 	<xsl:output method="text"/>
 
 	<xsl:template match="/forecast">
-		<xsl:text>{</xsl:text>
+		<xsl:text>[</xsl:text>
 		<xsl:for-each select="town">
-			<xsl:text>"</xsl:text>
-			<xsl:value-of select="@id"/>
-			<xsl:text>" : </xsl:text>
+
 			<xsl:text>{</xsl:text>
 
+			<xsl:text>"</xsl:text>
+			<xsl:value-of select="'id'"/>
+			<xsl:text>"</xsl:text>
+
+			<xsl:text> : </xsl:text>
+
+			<xsl:text>"</xsl:text>
+			<xsl:value-of select="@id"/>
+			<xsl:text>"</xsl:text>
+
+			<xsl:text>,</xsl:text>
 
 			<xsl:text>"</xsl:text>
 			<xsl:value-of select="'name'"/>
@@ -149,12 +158,12 @@
 
 				<xsl:text>}</xsl:text>
 
-						<xsl:text>}</xsl:text>
-						<xsl:if test="position() != last()">
-							<xsl:text>,</xsl:text>
-						</xsl:if>
-					</xsl:for-each>
-		<xsl:text>}</xsl:text>
+				<xsl:text>}</xsl:text>
+				<xsl:if test="position() != last()">
+					<xsl:text>,</xsl:text>
+				</xsl:if>
+			</xsl:for-each>
+		<xsl:text>]</xsl:text>
 		<xsl:if test="position() != last()">
 			<xsl:text>,</xsl:text>
 		</xsl:if>

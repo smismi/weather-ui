@@ -90,7 +90,7 @@ W.Views.Add = Backbone.View.extend({
 
 W.Views.OneDay = Backbone.View.extend({
 	tagName: "div",
-	template: _.template("<%= weather.temp %>"),
+	template: _.template("<%= id %> : <%= name %>, <%= country %> "),
 	initialize: function() {
 		this.render();
 	},
