@@ -64,10 +64,13 @@
 
 			<xsl:text>:</xsl:text>
 
-				<xsl:text>{</xsl:text>
 
+			<xsl:text>[</xsl:text>
 					<xsl:for-each select="date">
 
+
+
+						<xsl:text>{</xsl:text>
 
 						<xsl:text>"</xsl:text>
 						<xsl:value-of select="@day"/>
@@ -75,7 +78,11 @@
 
 						<xsl:text>:</xsl:text>
 
-						<xsl:text>{</xsl:text>
+						<xsl:text>"</xsl:text>
+						<xsl:value-of select="tmax"/>
+						<xsl:text>"</xsl:text>
+
+						<xsl:text>,</xsl:text>
 
 						<xsl:text>"</xsl:text>
 						<xsl:value-of select="'tmax'"/>
@@ -156,7 +163,7 @@
 
 					</xsl:for-each>
 
-				<xsl:text>}</xsl:text>
+				<xsl:text>]</xsl:text>
 
 				<xsl:text>}</xsl:text>
 				<xsl:if test="position() != last()">

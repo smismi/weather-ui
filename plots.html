@@ -19,6 +19,7 @@
 
 
 	<script src="js/weather-ui/app.js"></script>
+	<script src="js/weather-ui/events.js"></script>
 	<script src="js/weather-ui/models.js"></script>
 	<script src="js/weather-ui/collection.js"></script>
 	<script src="js/weather-ui/views.js"></script>
@@ -34,7 +35,7 @@
 <h1>WEATHER PLOTS</h1>
 
 <!--<div id="goroda"></div>-->
-<div id="week"></div>
+<!--<div id="week"></div>-->
 <div id="fullweek"></div>
 
 <div id="add_form">
@@ -62,7 +63,7 @@
 </div>
 <div class="weather_row1_wrap">
 	<div class="weather_row1_informer" style="margin-bottom: 0">
-		<div class="weather_actual_main">
+		<div id="actual_day" class="weather_actual_main">
 			<div class="weather_actual_big_ico"></div>
 			<p class="weather_actual_update">18:00</p>
 
@@ -84,84 +85,7 @@
 
 		</div>
 		<div class="clear"></div>
-		<div class="days">
-			<div class="day selected">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day ">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day ">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day ">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day ">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day ">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-
-			</div>
-			<div class="day">
-				<div class="day_month">10 июня</div>
-				<div class="day_week">Сегодня</div>
-				<div class="day_weather_ico">
-					<i class="c-cloudly"></i>
-				</div>
-				<div class="day_temp">+24<span> °C</span></div>
-				<div class="day_temp day_temp_night">+17<span> °C</span></div>
-				<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-			</div>
-		</div>
+		<div id="week" class="days"></div>
 
 		<div class="weather_plot">
 			<div class="weather_plot_measure">
@@ -897,6 +821,94 @@
 	<strong><%= humidity %></strong>,
 	<strong><%= pressure %></strong>,
 	<strong><%= wind %></strong>
+</script>
+<div class="day selected">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day ">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day ">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day ">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day ">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day ">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+</div>
+<div class="day">
+	<div class="day_month">10 июня</div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp">+24<span> °C</span></div>
+	<div class="day_temp day_temp_night">+17<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+</div>
+
+ 
+<script id="template_day" type="text/template">
+	<div class="day_month"><%= date %></div>
+	<div class="day_week">Сегодня</div>
+	<div class="day_weather_ico">
+		<i class="c-cloudly"></i>
+	</div>
+	<div class="day_temp"><%= tmax %><span> °C</span></div>
+	<div class="day_temp day_temp_night">__<span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
 </script>
 
 </body>

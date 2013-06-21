@@ -1,6 +1,7 @@
 var W = {
 	Models: {},
 	Views: {},
+	Events: {},
 	Collections: {}
 }
 

@@ -25,12 +25,25 @@ W.Views.Local = Backbone.View.extend({
 
 
 	},
+	getActive: function() {
+
+		alert("active" + this.model.get("id"));
+		W.EventsLocals.trigger(W.EventsLocals.GETACTIVE);
+
+//		this.$el.remove();
+//		collection_locals.remove(this.model);
+
+
+	},
 	buttons : {
 		close: "<div class='close'>",
 		active: "<div class='active'>"
-	},
+	}
+	,
 	events : {
-		"click .close": "close"
+		"click .close": "close",
+		"click": "getActive"
+
 	}
 
 });
@@ -40,7 +53,8 @@ W.Views.Locals = Backbone.View.extend({
 	el: "#goroda",
 	initialize: function() {
 		this.render();
-		this.collection.on("add", this.addOne, this);
+		this.collection.on("reset", this.addOne, this);
+
 	},
 	addOne: function(local) {
 
@@ -65,6 +79,11 @@ W.Views.Locals = Backbone.View.extend({
 
 		this.$el.append(_local.$el);
 
+
+	},
+	hightlightme: function() {
+
+		                   console.log("hailoo");
 
 	}
 })
@@ -91,13 +110,14 @@ W.Views.Add = Backbone.View.extend({
 
 W.Views.OneDay = Backbone.View.extend({
 	tagName: "div",
-	template: _.template("<%= id %> : <%= name %>, <%= country %> "),
+	template: '#template_day',
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
+		var template = _.template( $(this.template).html() );
 
-		this.$el.html( this.template( this.model.toJSON() ) );
+		this.$el.addClass("day").html(template( this.model.toJSON() ));
 
 		return this;
 	}
@@ -110,8 +130,11 @@ W.Views.OneWeek = Backbone.View.extend({
 	tagName: "p",
 	initialize: function() {
 		this.render();
+		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.render)
 	},
 	render: function() {
+
+		console.log("render");
 		this.collection.each(function(day){
 
 			this.renderEach(day);

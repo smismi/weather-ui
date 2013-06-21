@@ -6,7 +6,42 @@ W.Collections.Days = Backbone.Collection.extend({
 
 
 var collection_days = new W.Collections.Days([
-
+	{
+		"date": "2013-03-26",
+		"tmax": "27",
+		"tmin": "12",
+		"prec": "0",
+		"prec_prob": "1",
+		"wind_dir": "210",
+		"windspeed": "6",
+		"weather_conditions": "Переменная облачность, без осадков",
+		"pday": "693",
+		"pnight": "692"
+	},
+	{
+		"date": "2013-03-27",
+		"tmax": "19",
+		"tmin": "10",
+		"prec": "0",
+		"prec_prob": "12",
+		"wind_dir": "270",
+		"windspeed": "8",
+		"weather_conditions": "Переменная облачность, без осадков",
+		"pday": "691",
+		"pnight": "695"
+	},
+	{
+		"date": "2013-03-28",
+		"tmax": "21",
+		"tmin": "9",
+		"prec": "0",
+		"prec_prob": "12",
+		"wind_dir": "280",
+		"windspeed": "7",
+		"weather_conditions": "Переменная облачность, без осадков",
+		"pday": "694",
+		"pnight": "696"
+	}
 ]);
 
 W.Collections.Local = Backbone.Collection.extend({
