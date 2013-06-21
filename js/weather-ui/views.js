@@ -2,7 +2,7 @@
 //VIEWS
 
 W.Views.Local = Backbone.View.extend({
-	tagName: "figure",
+	tagName: "li",
 	template: '#template_local',
 	initialize: function() {
 		this.render();
@@ -11,7 +11,7 @@ W.Views.Local = Backbone.View.extend({
 
 		var template = _.template( $(this.template).html() );
 
-		this.$el.html(template( this.model.toJSON() ));
+		this.$el.addClass("weather_local_item").html(template( this.model.toJSON() ));
 
 		this.$el.append(this.buttons.close);
 
@@ -37,6 +37,7 @@ W.Views.Local = Backbone.View.extend({
 
 
 W.Views.Locals = Backbone.View.extend({
+	el: "#goroda",
 	initialize: function() {
 		this.render();
 		this.collection.on("add", this.addOne, this);
