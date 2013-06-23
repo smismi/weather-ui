@@ -23,22 +23,32 @@ $(document).ready(function(){
 	var labels  =   [1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
 		data    =   [24, 22, 20, 23, 55, 23, 20, 23, 22, 22, 22, 20, 23, 22, 22, 20, 20, 20, 23, 55, 23, 20, 23, 22, 22, 22, 22, 20, 20],
 		data2   =   [15, 12, 13, 16, 12, 6,  15, 12, 13, 16, 12, 6,  15, 12, 13, 16, 16, 15, 12, 13, 16, 15, 12, 13, 26, 15, 7,  13, 16];
+//
+//
+//	var labels  =   [1,  2,  3,  4,  5,  6,  29],
+//		data    =   [2, -2, 2, -2, 2, -2, 2],
+//		data2   =   [-2, 2, -2, 2, -2, 2, -2];
 
 
 
 	// Draw
+//	var width = 720,
 	var width = 5560,
 		height = 270,
-		leftgutter = 0,
-		bottomgutter = 0,
-		topgutter = 12,
+//		height = 70,
+		leftgutter = 10,
+		bottomgutter = 10,
+		topgutter = 10,
 		color = "rgba(255,102,0,1)",
 		color2 = "rgba(0,102,153,1)",
+//		r = Raphael("weather_plot", width, height),
 		r = Raphael("weather_plot_big", width, height),
 		X = (width - leftgutter) / labels.length,
 		max = Math.max.apply(Math, data.concat(data2)),
-		Y = (height - bottomgutter - topgutter) / max;
-
+		min = Math.min.apply(Math, data.concat(data2)),
+		Y = (height - bottomgutter - topgutter) / (max-min);
+//    debugger;
+        console.log(Y)
 	var blanket = r.set();
 
 	var path = r.path().attr({stroke: color, "stroke-width": 3, "stroke-linejoin": "round"}),
@@ -49,6 +59,7 @@ $(document).ready(function(){
 
 	draw_day = draw(data);
 	draw_night = draw(data2);
+
 
 	drawBlanket();
 
@@ -97,16 +108,16 @@ $(document).ready(function(){
 	function draw(data) {
 		var p, bgpp;
 		for (var i = 0, ii = labels.length; i < ii; i++) {
-			var y = Math.round(height - bottomgutter - Y * data[i]),
+			var y = Math.round(height - bottomgutter - Y * data[i] + min * Y),
 				x = Math.round(leftgutter + X * (i + .5));
 			if (!i) {
 				p = ["M", x, y, "C", x, y];
 				bgpp = ["M", leftgutter + X * .5, height - bottomgutter, "L", x, y, "C", x, y];
 			}
 			if (i && i < ii - 1) {
-				var Y0 = Math.round(height - bottomgutter - Y * data[i - 1]),
+				var Y0 = Math.round(height - bottomgutter - Y * data[i - 1]  + min * Y),
 					X0 = Math.round(leftgutter + X * (i - .5)),
-					Y2 = Math.round(height - bottomgutter - Y * data[i + 1]),
+					Y2 = Math.round(height - bottomgutter - Y * data[i + 1]  + min * Y),
 					X2 = Math.round(leftgutter + X * (i + 1.5));
 				var a = getAnchors(X0, Y0, x, y, X2, Y2);
 				p = p.concat([a.x1, a.y1, x, y, a.x2, a.y2]);

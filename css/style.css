@@ -1497,7 +1497,7 @@ body {
 .weather_plot {
 	height: 70px;
 	position: relative;
-	margin-top: -150px;
+	/*margin-top: -150px;*/
 }
 
 .weather_plot_measure {
