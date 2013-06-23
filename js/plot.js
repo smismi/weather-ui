@@ -31,6 +31,7 @@ function Plot(dataset, colorset, width, height, container) {
             var y = Math.round(height - bottomgutter - Y * data[i]),
                 x = Math.round(leftgutter + X * (i + .5));
 
+
             blanket.push(r.rect(leftgutter + X * i, 0, X, height - bottomgutter).attr({stroke: "none", fill: "#fff", opacity: 0}));
             var rect = blanket[blanket.length - 1];
 
@@ -82,6 +83,26 @@ function Plot(dataset, colorset, width, height, container) {
 
         return {_p: p, _bgpp: bgpp}
     }
+
+    this.updateData = function() {
+        alert(1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // Draw
@@ -147,5 +168,6 @@ function Plot(dataset, colorset, width, height, container) {
         this.drawBlanket();
         blanket.toFront();
 
+        return this;
 
 }
