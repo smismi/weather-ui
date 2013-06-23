@@ -1497,7 +1497,7 @@ body {
 .weather_plot {
 	height: 70px;
 	position: relative;
-	/*margin-top: -150px;*/
+	margin-top: -150px;
 }
 
 .weather_plot_measure {
@@ -1525,6 +1525,7 @@ body {
 }
 
 .weather_plot_graph {
+    position: absolute;
 	width: 712px;
 	height: 70px;
 	background: rgba(255, 140, 33, 0.2);

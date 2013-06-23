@@ -112,7 +112,7 @@ function Plot(dataset, colorset, width, height, container) {
     var data = [],
         width = this.width,
         height = this.height,
-        leftgutter = 10,
+        leftgutter = 0,
         bottomgutter = 10,
         topgutter = 10;
 
