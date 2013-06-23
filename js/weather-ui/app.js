@@ -20,6 +20,8 @@ $(document).ready(function () {
 	var addItem = new W.Views.Add();
 
 
+	var today = new W.Views.Today({});
+
 	var week = new W.Views.OneWeek({
 		collection: collection_days
 	});

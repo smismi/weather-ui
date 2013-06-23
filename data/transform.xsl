@@ -73,13 +73,13 @@
 						<xsl:text>{</xsl:text>
 
 						<xsl:text>"</xsl:text>
-						<xsl:value-of select="@day"/>
+						<xsl:value-of select="'date'"/>
 						<xsl:text>"</xsl:text>
 
 						<xsl:text>:</xsl:text>
 
 						<xsl:text>"</xsl:text>
-						<xsl:value-of select="tmax"/>
+						<xsl:value-of select="@day"/>
 						<xsl:text>"</xsl:text>
 
 						<xsl:text>,</xsl:text>
