@@ -7,16 +7,19 @@
 
      
 
-    <script src="js/underscore.js"></script>
+    <!--<script src="js/underscore.js"></script>-->
     <script src="js/jquery.2.0.js"></script>
-    <script src="js/backbone.js"></script>
-    <script src="js/jquery.touchcarousel-1.2.js"></script>
+    <!--<script src="js/backbone.js"></script>-->
+    <!--<script src="js/jquery.touchcarousel-1.2.js"></script>-->
 
 
-    <script src="js/weather-ui/app.js"></script>
-    <script src="js/weather-ui/models.js"></script>
-    <script src="js/weather-ui/collection.js"></script>
-    <script src="js/weather-ui/views.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/plot.js"></script>
+
+    <!--<script src="js/weather-ui/app.js"></script>-->
+    <!--<script src="js/weather-ui/models.js"></script>-->
+    <!--<script src="js/weather-ui/collection.js"></script>-->
+    <!--<script src="js/weather-ui/views.js"></script>-->
 
 
     <script type="text/javascript">
@@ -28,39 +31,40 @@
 </head>
 <body>   
  
-<h1>PLUGIN</h1>
+<h1>PLUGIN plot</h1>
+<div class="weather_plot">
+    <div class="weather_plot_measure">
+						<span class="weather_plot_measure_top">
+							+24
+						</span>
+						<span class="weather_plot_measure_bottom">
+							+12
+						</span>
+    </div>
+    <div class="weather_plot_graph" id="weather_plot"></div>
 
-<div id="goroda"></div>
-<div id="week"></div>
-<div id="fullweek"></div>
+    <div id="weather_plot_big"></div>
 
-<div id="add_form">
-    <input type="text"  name="name" value="2eq2r"/>
-    <input type="submit" class="add_button" value="add"/>
+
 </div>
-
 <script type="text/javascript">
 
-    $(document).ready(function(){
+//    $(document).ready(function(){
+    var bigdata    =   [
+        24, 22, 20, 23,
+        55, 23, 20, 23,
+        22, 22, 22, 20,
+        23, 22, 22, 20,
+        20, 20, 23, 55,
+        23, 20, 23, 22,
+        22, 22, 22, 20, 20];
+          var weather_plot = new Plot([[2, -2, 2, -2, 2, -2, 2], [-2, 2, -2, 2, -2, 2, -2]],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, "weather_plot");
+          var weather_plot_big = new Plot([bigdata],["rgba(255,102,0,1)"]   , 5560, 270, "weather_plot_big");
 
-
-    });
+//    });
 
 
 </script>
- 
-<script id="template_local" type="text/template">
-    <strong><%= _id %></strong> <a href="<%= url %>"><%= name %> </a> - <%= geo.n %> , <%= geo.w %>
-</script>
- 
-<script id="template_hour" type="text/template">
-    <strong><%= temp %></strong>,
-    <strong><%= humidity %></strong>,
-    <strong><%= pressure %></strong>,
-    <strong><%= wind %></strong>
-</script>
-
-
 </body>
 </html>
 
