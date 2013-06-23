@@ -25,13 +25,19 @@ W.Views.Local = Backbone.View.extend({
 
 
 	},
+    currentStatus : function(_id){
+        return collection_locals.get("id") == _id;
+     },
 	getActive: function() {
 
-		alert("active" + this.model.get("id"));
-		W.EventsLocals.trigger(W.EventsLocals.GETACTIVE);
+        var _id = this.model.get("id");
 
-//		this.$el.remove();
-//		collection_locals.remove(this.model);
+        var _h = collection_locals.get(_id).get("days");
+        collection_days = new W.Collections.Days(_h,{model: W.Models.Day});
+
+        W.EventsLocals.trigger(W.EventsLocals.GETACTIVE);
+
+
 
 
 	},
@@ -82,8 +88,7 @@ W.Views.Locals = Backbone.View.extend({
 
 	},
 	hightlightme: function() {
-
-		                   console.log("hailoo");
+        console.log("hailoo");
 
 	}
 })
@@ -104,6 +109,22 @@ W.Views.Add = Backbone.View.extend({
 		collection_locals.add(_new_local);
 		console.log(collection_locals.length);
 
+	}
+})
+
+
+W.Views.Today = Backbone.View.extend({
+	tagName: "div",
+	template: '#template_today',
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+		var template = _.template( $(this.template).html() );
+
+		this.$el.html(template());
+        $("#today").append(this.$el)
+		return this;
 	}
 })
 
@@ -130,12 +151,15 @@ W.Views.OneWeek = Backbone.View.extend({
 	tagName: "p",
 	initialize: function() {
 		this.render();
-		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.render)
-	},
+		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.redrawWeek, this);
+//        this.collection.on("", this.render, this);
+
+    },
 	render: function() {
 
-		console.log("render");
-		this.collection.each(function(day){
+        this.$el.html("");
+
+        this.collection.each(function(day){
 
 			this.renderEach(day);
 
@@ -149,11 +173,18 @@ W.Views.OneWeek = Backbone.View.extend({
 
 		var day = new W.Views.OneDay({model: model});
 
-
 		this.$el.append(day.$el);
 
 
 	}
+    ,
+    redrawWeek : function () {
+
+        this.collection = collection_days;
+
+        this.render();
+
+    }
 })
 
 

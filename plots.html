@@ -823,7 +823,6 @@
 	<strong><%= wind %></strong>
 </script>
 
- 
 <script id="template_day" type="text/template">
 	<div class="day_month"><%= date %></div>
 	<div class="day_week">Сегодня</div>
@@ -833,6 +832,22 @@
 	<div class="day_temp"><%= tmax %><span> °C</span></div>
 	<div class="day_temp day_temp_night">__<span> °C</span></div>
 	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+</script>
+
+
+<script id="template_today" type="text/template">
+    <div class="weather_actual_main">
+        <div class="weather_actual_big_ico"></div>
+        <p class="weather_actual_update">18:00</p>
+        <p class="weather_actual_temp">+20<span>°C</span></p>
+        <p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+    </div>
+    <div class="weather_actual_description">
+        <p class="weather_actual_title">Москва</p>
+        <p class="weather_actual_preview">Стихия</p>
+        <p class="weather_actual_left">Магнитная обстановка: <a href="">Спокойная</a></p>
+        <p class="weather_actual_right"><a href="">Климатическая норма</a></p>
+    </div>
 </script>
 
 </body>
