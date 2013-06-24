@@ -121,11 +121,116 @@ W.Views.OneDay = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
+		this.modelReformated(this.model);
+
 		var template = _.template( $(this.template).html() );
 
-		this.$el.addClass("day").html(template( this.model.toJSON() ));
+
+
+ 		this.$el.addClass("day").html(template( this.model.toJSON() ));
 
 		return this;
+	},
+	modelReformated: function (model) {
+
+		var d = new Date(model.get("date"));
+		var weekday= ["Воскресенье", 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+
+		var wind = parseInt(model.get("wind_dir"), 10);
+
+ 		switch (true) {
+			case wind <= 23:
+				wind_dir = 0;
+				break
+			case wind <= 45:
+				wind_dir = 1;
+				break
+			case wind <= 68:
+				wind_dir = 2;
+				break
+			case wind <= 90:
+				wind_dir = 3;
+				break
+			case wind <= 112.5:
+				wind_dir = 4;
+				break
+			case wind <= 135:
+				wind_dir = 5;
+				break
+			case wind <= 157.5:
+				wind_dir = 6;
+				break
+			case wind <= 180:
+				wind_dir = 7;
+				break
+			case wind <= 202.5:
+				wind_dir = 8;
+				break
+			case wind <= 225:
+				wind_dir = 9;
+				break
+			case wind <= 247.5:
+				wind_dir = 10;
+				break
+			case wind <= 270:
+				wind_dir = 11;
+				break
+			case wind <= 292.5:
+				wind_dir = 12;
+				break
+			case wind <= 315:
+				wind_dir = 13;
+				break
+			case wind <= 337.5:
+				wind_dir = 14;
+				break
+			case wind <= 360:
+				wind_dir = 15;
+				break
+			default:
+				wind_dir = 0;
+
+		}
+
+		var w = new Date(model.get("weather_conditions"));
+
+
+		switch (w) {
+			case "Переменная облачность, без осадков":
+				wcs_index = 0;
+				break
+			case "Облачно, небольшой дождь":
+				wcs_index = 1;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 2;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 3;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 4;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 5;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 6;
+				break
+			case "Переменная облачность, без осадков":
+				wcs_index = 7;
+				break
+			default:
+				wcs_index = 0;
+
+		}
+
+
+		var wcs= ["c-cloudly", 'c-rainy', 'cloudly', 'c-cloudly', 'c-cloudly', 'c-cloudly', 'c-cloudly'];
+
+		model.set({"reformated_day_week": weekday[d.getDay()], "ico_class": wcs[wcs_index], "wind_dir": wind_dir});
+
+
 	}
 });
 

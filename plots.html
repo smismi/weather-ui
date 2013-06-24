@@ -89,12 +89,12 @@
 
 		<div class="weather_plot">
 			<div class="weather_plot_measure">
-						<span class="weather_plot_measure_top">
-							+24
-						</span>
-						<span class="weather_plot_measure_bottom">
-							+12
-						</span>
+                <span class="weather_plot_measure_top">
+                    +24
+                </span>
+                <span class="weather_plot_measure_bottom">
+                    +12
+                </span>
 			</div>
 			<div class="weather_plot_graph" id="weather_plot"></div>
 
@@ -825,13 +825,13 @@
  
 <script id="template_day" type="text/template">
 	<div class="day_month"><%= date %></div>
-	<div class="day_week">Сегодня</div>
+	<div class="day_week"><%= reformated_day_week %></div>
 	<div class="day_weather_ico">
-		<i class="c-cloudly"></i>
+		<i class="c-cloudly"><%= ico_class %></i>
 	</div>
 	<div class="day_temp"><%= tmax %><span> °C</span></div>
-	<div class="day_temp day_temp_night">__<span> °C</span></div>
-	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+	<div class="day_temp day_temp_night"><%= tmin %><span> °C</span></div>
+	<p class="weather_wind"><i><em></em></i><%= wind_dir %> = <%= windspeed %></p>
 </script>
 
 
