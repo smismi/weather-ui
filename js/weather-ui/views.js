@@ -25,20 +25,9 @@ W.Views.Local = Backbone.View.extend({
 
 
 	},
-    currentStatus : function(_id){
-        return collection_locals.get("id") == _id;
-     },
 	getActive: function() {
 
-        var _id = this.model.get("id");
-
-        var _h = collection_locals.get(_id).get("days");
-        collection_days = new W.Collections.Days(_h,{model: W.Models.Day});
-
-        W.EventsLocals.trigger(W.EventsLocals.GETACTIVE);
-
-
-
+		W.EventsLocals.trigger(W.EventsLocals.GETACTIVE, this.model);
 
 	},
 	buttons : {
@@ -75,7 +64,7 @@ W.Views.Locals = Backbone.View.extend({
 
 		}, this);
 
-		$("#goroda").append(this.$el)
+		$("#goroda").append(this.$el);
 
 		return this;
 	},
@@ -86,12 +75,8 @@ W.Views.Locals = Backbone.View.extend({
 		this.$el.append(_local.$el);
 
 
-	},
-	hightlightme: function() {
-        console.log("hailoo");
-
 	}
-})
+});
 
 
 
@@ -110,7 +95,7 @@ W.Views.Add = Backbone.View.extend({
 		console.log(collection_locals.length);
 
 	}
-})
+});
 
 
 W.Views.Today = Backbone.View.extend({
@@ -126,7 +111,7 @@ W.Views.Today = Backbone.View.extend({
         $("#today").append(this.$el)
 		return this;
 	}
-})
+});
 
 
 W.Views.OneDay = Backbone.View.extend({
@@ -142,7 +127,7 @@ W.Views.OneDay = Backbone.View.extend({
 
 		return this;
 	}
-})
+});
 
 
 
@@ -151,21 +136,19 @@ W.Views.OneWeek = Backbone.View.extend({
 	tagName: "p",
 	initialize: function() {
 		this.render();
-		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.redrawWeek, this);
-//        this.collection.on("", this.render, this);
-
-    },
+		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.onSetActive, this)
+		this.collection.on('reset', this.render, this);
+	},
 	render: function() {
-
-        this.$el.html("");
-
-        this.collection.each(function(day){
+		this.$el.empty();
+		console.log("render", arguments);
+		this.collection.each(function(day){
 
 			this.renderEach(day);
 
 		}, this);
 
-		$("#week").append(this.$el)
+		$("#week").append(this.$el);
 
 		return this;
 	},
@@ -173,19 +156,18 @@ W.Views.OneWeek = Backbone.View.extend({
 
 		var day = new W.Views.OneDay({model: model});
 
+
 		this.$el.append(day.$el);
 
 
+	},
+	onSetActive : function (obj) {
+
+		collection_days.reset(obj.get("days"));
+//		this.render(obj)
+
 	}
-    ,
-    redrawWeek : function () {
-
-        this.collection = collection_days;
-
-        this.render();
-
-    }
-})
+});
 
 
 W.Views.Hour = Backbone.View.extend({
