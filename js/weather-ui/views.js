@@ -253,6 +253,8 @@ W.Views.OneWeek = Backbone.View.extend({
 
 		}, this);
 
+		var week_plot = new W.Views.WeekPlot({collection: this.collection});
+
 		$("#week").append(this.$el);
 
 		return this;
@@ -306,6 +308,7 @@ W.Views.FullDay = Backbone.View.extend({
 		var _h = this.model.get("hours");
 		collection = new Backbone.Collection(_h,{model: W.Models.Hour});
 
+
 		_this = this;
 		collection.each(function(hour) {
 
@@ -344,6 +347,9 @@ W.Views.FullWeek = Backbone.View.extend({
 
 		$("#fullweek").append(this.$el)
 
+		var full_week_plot = new W.Views.FullWeekPlot({collection: this.collection});
+
+
 		return this;
 	},
 	renderEach: function(model) {
@@ -354,6 +360,53 @@ W.Views.FullWeek = Backbone.View.extend({
 		this.$el.append(_day.$el);
 
 
+	}
+})
+
+
+
+W.Views.WeekPlot = Backbone.View.extend({
+	_el: "weather_plot",
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+
+		var max_temp_data = [];
+		var min_temp_data = [];
+
+		this.collection.each(function(day){
+
+			max_temp_data.push(day.get("tmax"));
+			min_temp_data.push(day.get("tmin"));
+
+		}, this);
+
+		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el);
+
+		return this;
+	}
+})
+
+W.Views.FullWeekPlot = Backbone.View.extend({
+	_el: "weather_plot_big",
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+
+//		debugger;
+		var bigdata = [
+			24, 22, 20, 23,
+			55, 23, 20, 23,
+			22, 22, 22, 20,
+			23, 22, 22, 20,
+			20, 20, 23, 55,
+			23, 20, 23, 22,
+			22, 22, 22, 20, 20];
+		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el);
+
+		return this;
 	}
 })
 
