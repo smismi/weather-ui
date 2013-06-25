@@ -420,10 +420,15 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 //			55, 23, 20, 23,
 //			22, 22, 22, 20,
 //			23, 22, 22, 20,
-			100, 0, 100, 0,
-			100, 0, 100, 0,
-			100, 0, 100, 0, 100];
-		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 2470, 270, this._el);
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
+			100 * Math.random()];
+		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el);
 
 		return this;
 	}
