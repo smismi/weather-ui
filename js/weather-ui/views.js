@@ -240,9 +240,10 @@ W.Views.OneDay = Backbone.View.extend({
 W.Views.OneWeek = Backbone.View.extend({
 	tagName: "p",
 	initialize: function() {
-		this.render();
+		this.render().redrawFullWeek();
 		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.onSetActive, this)
 		this.collection.on('reset', this.render, this);
+		this.collection.on('reset', this.redrawFullWeek, this);
 	},
 	render: function() {
 		this.$el.empty();
@@ -273,6 +274,14 @@ W.Views.OneWeek = Backbone.View.extend({
 		collection_days.reset(obj.get("days"));
 //		this.render(obj)
 
+	},
+	redrawFullWeek : function (obj) {
+
+		var fullweek = new W.Views.FullWeek({
+			collection: collection_days
+		});
+		//		this.render(obj)
+
 	}
 });
 
@@ -290,7 +299,7 @@ W.Views.Hour = Backbone.View.extend({
 
 		var template = _.template( $(this.template).html() );
 
-		this.$el.html(template( this.model.toJSON() ));
+ 		this.$el.html(template( this.model.toJSON() ));
 
 		return this;
 	}
@@ -408,12 +417,13 @@ W.Views.WeekPlot = Backbone.View.extend({
 })
 
 W.Views.FullWeekPlot = Backbone.View.extend({
+	el: "#weather_plot_big",
 	_el: "weather_plot_big",
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
-
+		this.$el.html("");
 //		debugger;
 		var bigdata = [
 //			24, 22, 20, 23,
