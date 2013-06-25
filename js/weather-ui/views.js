@@ -381,7 +381,7 @@ W.Views.WeekPlot = Backbone.View.extend({
 			min_temp_data.push(day.get("tmin"));
 
 		}, this);
-
+		$("#" + this._el).html("");
 		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el);
 
 		return this;
