@@ -26,8 +26,8 @@ $(document).ready(function () {
 		collection: collection_days
 	});
 
-//	var fullweek = new W.Views.FullWeek({
-//		collection: collection_days
-//	});
+	var fullweek = new W.Views.FullWeek({
+		collection: collection_days
+	});
 
 })

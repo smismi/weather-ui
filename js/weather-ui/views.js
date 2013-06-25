@@ -279,7 +279,8 @@ W.Views.OneWeek = Backbone.View.extend({
 
 W.Views.Hour = Backbone.View.extend({
 	tagName: "div",
-	template: '#template_hour',
+	className: "day_part",
+	template: '#template_daypart',
 
 //	template: _.template("<p>hours: <%= temp %>, <%= humidity %>, <%= pressure %>, <%= wind %></p>"),
 	initialize: function() {
@@ -299,21 +300,21 @@ W.Views.Hour = Backbone.View.extend({
 
 
 W.Views.FullDay = Backbone.View.extend({
-	tagName: "div",
+	tagName: "li",
+	className: "touchcarousel-item",
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
 
 		var _h = this.model.get("hours");
+
 		collection = new Backbone.Collection(_h,{model: W.Models.Hour});
 
-
 		_this = this;
+
 		collection.each(function(hour) {
-
 			_this.renderEach(hour);
-
 		});
 
 
@@ -334,9 +335,9 @@ W.Views.FullDay = Backbone.View.extend({
 
 
 W.Views.FullWeek = Backbone.View.extend({
-	tagName: "div",
+	el: "#touchcarousel-container",
 	initialize: function() {
-		this.render();
+		this.render().carouselize().plotarize();
 	},
 	render: function() {
 		this.collection.each(function(day){
@@ -344,11 +345,6 @@ W.Views.FullWeek = Backbone.View.extend({
 			this.renderEach(day);
 
 		}, this);
-
-		$("#fullweek").append(this.$el)
-
-		var full_week_plot = new W.Views.FullWeekPlot({collection: this.collection});
-
 
 		return this;
 	},
@@ -359,6 +355,26 @@ W.Views.FullWeek = Backbone.View.extend({
 
 		this.$el.append(_day.$el);
 
+
+	},
+	carouselize: function () {
+
+		$("#carousel-image-and-text").touchCarousel({
+			pagingNav: true,
+			snapToItems: true,
+			itemsPerMove: 1,
+			scrollToLast: false,
+			loopItems: false,
+			scrollbar: true
+		});
+
+		carousel = $("#carousel-image-and-text").data("touchCarousel");
+		carousel.items[0].item.append("	<div id=\"weather_plot_big\" style=\"position: absolute; top:0; left:20px; width: 0; height: 0;\"></div>")
+ 		return this;
+	},
+	plotarize: function () {
+
+		var full_week_plot = new W.Views.FullWeekPlot({collection: this.collection});
 
 	}
 })
@@ -382,6 +398,9 @@ W.Views.WeekPlot = Backbone.View.extend({
 
 		}, this);
 		$("#" + this._el).html("");
+
+
+
 		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el);
 
 		return this;
@@ -397,14 +416,14 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 
 //		debugger;
 		var bigdata = [
-			24, 22, 20, 23,
-			55, 23, 20, 23,
-			22, 22, 22, 20,
-			23, 22, 22, 20,
-			20, 20, 23, 55,
-			23, 20, 23, 22,
-			22, 22, 22, 20, 20];
-		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el);
+//			24, 22, 20, 23,
+//			55, 23, 20, 23,
+//			22, 22, 22, 20,
+//			23, 22, 22, 20,
+			100, 0, 100, 0,
+			100, 0, 100, 0,
+			100, 0, 100, 0, 100];
+		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 2470, 270, this._el);
 
 		return this;
 	}

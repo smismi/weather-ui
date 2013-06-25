@@ -16,7 +16,57 @@ var collection_days = new W.Collections.Days([
 		"windspeed": "6",
 		"weather_conditions": "Переменная облачность, без осадков",
 		"pday": "693",
-		"pnight": "692"
+		"pnight": "692",
+		"hours" : [
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			}
+		]
 	},
 	{
 		"date": "2013-03-27",
@@ -28,7 +78,57 @@ var collection_days = new W.Collections.Days([
 		"windspeed": "8",
 		"weather_conditions": "Переменная облачность, без осадков",
 		"pday": "691",
-		"pnight": "695"
+		"pnight": "695",
+		"hours" : [
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			}
+		]
 	},
 	{
 		"date": "2013-03-28",
@@ -40,7 +140,69 @@ var collection_days = new W.Collections.Days([
 		"windspeed": "7",
 		"weather_conditions": "Переменная облачность, без осадков",
 		"pday": "694",
-		"pnight": "696"
+		"pnight": "696",
+		"hours" : [
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			},
+			{
+				"date": "2013-03-27",
+				"tmax": "19",
+				"tmin": "10",
+				"prec": "0",
+				"prec_prob": "12",
+				"wind_dir": "270",
+				"windspeed": "8",
+				"weather_conditions": "Переменная облачность, без осадков",
+				"pday": "691",
+				"pnight": "695"
+			}
+		]
 	}
 ]);
 
