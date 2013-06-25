@@ -368,7 +368,7 @@ W.Views.FullWeek = Backbone.View.extend({
 	},
 	carouselize: function () {
 
-		$("#carousel-image-and-text").touchCarousel({
+  		$("#carousel-image-and-text").touchCarousel({
 			pagingNav: true,
 			snapToItems: true,
 			itemsPerMove: 1,
