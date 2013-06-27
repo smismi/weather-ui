@@ -39,15 +39,14 @@ function Plot(dataset, colorset, width, height, container) {
                 var timer;
                 rect.click(function(){
                     var value = data[i];
-                    alert(value);
                 });
                 rect.hover(function () {
-                    clearTimeout(leave_timer);
+//                    clearTimeout(leave_timer);
 
                 }, function () {
-                    leave_timer = setTimeout(function () {
-
-                    }, 1);
+//                    leave_timer = setTimeout(function () {
+//
+//                    }, 1);
                 });
             })(x, y, i);
 

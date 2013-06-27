@@ -344,11 +344,19 @@ W.Views.FullDay = Backbone.View.extend({
 
 
 W.Views.FullWeek = Backbone.View.extend({
-	el: "#touchcarousel-container",
+	el: "#two",
+	template: '#template_fullweek',
+
 	initialize: function() {
 		this.render().carouselize().plotarize();
 	},
 	render: function() {
+
+
+		var template = _.template( $(this.template).html() );
+
+		this.$el.html(template());
+
 		this.collection.each(function(day){
 
 			this.renderEach(day);
@@ -362,13 +370,13 @@ W.Views.FullWeek = Backbone.View.extend({
 		var _day = new W.Views.FullDay({model: model});
 
 
-		this.$el.append(_day.$el);
+		this.$el.find("#touchcarousel-container").append(_day.$el);
 
 
 	},
 	carouselize: function () {
 
-  		$("#carousel-image-and-text").touchCarousel({
+   		$("#carousel-image-and-text").touchCarousel({
 			pagingNav: true,
 			snapToItems: true,
 			itemsPerMove: 1,
