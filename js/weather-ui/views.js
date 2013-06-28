@@ -316,6 +316,8 @@ W.Views.FullDay = Backbone.View.extend({
 	},
 	render: function() {
 
+		this.getDayLight(this.model);
+
 		var _h = this.model.get("hours");
 
 		collection = new Backbone.Collection(_h,{model: W.Models.Hour});
@@ -336,6 +338,13 @@ W.Views.FullDay = Backbone.View.extend({
 
 		this.$el.append(_hour.$el);
 
+
+	},
+	getDayLight: function(model) {
+
+		var suncalc = SunCalc.getTimes(new Date(this.model.get("date")), 55.7, 37.5);
+
+		this.$el.append("<div class=\"day_night\"><div class=\"tooltip tooltip_sunrise\"> Рассвет (" + suncalc.dawn.getHours() + ":" + suncalc.dawn.getMinutes() + ") <i></i></div><div class=\"tooltip tooltip_sundown\"> Закат (" + suncalc.dusk.getHours() + ":" + suncalc.dusk.getMinutes() + ") <i></i></div></div>")
 
 	}
 })
