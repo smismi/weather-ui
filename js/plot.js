@@ -95,11 +95,11 @@ function Plot(dataset, colorset, width, height, container) {
 		for (var i = 0, ii = 10; i <= ii; i++) {
 
 			if (i === ii) {
-				ticks.push(r.rect(0, this.height - 1, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+				ticks.push(r.rect(0, this.height - bottomgutter, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
 				return;
 			}
 
-			ticks.push(r.rect(0, this.height/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+			ticks.push(r.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
 
 
 		}
@@ -184,9 +184,9 @@ function Plot(dataset, colorset, width, height, container) {
         this.drawBlanket();
         blanket.toFront();
 
-//        var ticks = r.set();
-//        this.drawTicks();
-//		ticks.toFront();
+        var ticks = r.set();
+        this.drawTicks();
+		ticks.toFront();
 
         return this;
 
