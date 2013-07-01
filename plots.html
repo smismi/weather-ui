@@ -36,8 +36,6 @@
 <div style="width:1000px; margin: 0 auto"> 
 <h1>WEATHER PLOTS</h1>
 
-<!--<div id="goroda"></div>-->
-<!--<div id="week"></div>-->
 <div id="fullweek"></div>
 
 <div id="add_form">
@@ -50,16 +48,6 @@
 	<h1 class="title">погода</h1>
 	<ul id="goroda" class="citieslist">
 		<li class="weather_local_item"><a href="#" id="addcity">Добавить город</a></li>
-		<!--<li class="weather_local_item">-->
-			<!--<div class="weather_localname">Москва</div>-->
-			<!--<span class="weather_localtemp"><i></i>+22°C</span>-->
-			<!--<i class="close"></i>-->
-		<!--</li>-->
-		<!--<li class="weather_local_item">-->
-			<!--<div class="weather_localname">Чернобыль</div>-->
-			<!--<span class="weather_localtemp"><i></i>+22°C</span>-->
-			<!--<i class="close"></i>-->
-		<!--</li>-->
 	</ul>
 	<div class="clear"></div>
 </div>
@@ -90,16 +78,9 @@
 		<div id="week" class="days"></div>
 
 		<div class="weather_plot">
-			<div class="weather_plot_measure">
-                <span class="weather_plot_measure_top">
-                    +24
-                </span>
-                <span class="weather_plot_measure_bottom">
-                    +12
-                </span>
-			</div>
-			<div class="weather_plot_graph" id="weather_plot"></div>
+            <div class="weather_plot_measure"></div>
 
+            <div class="weather_plot_graph" id="weather_plot"></div>
 		</div>
 
 	</div>
@@ -198,7 +179,7 @@
 </script>
 
 <script id="template_fullweek" type="text/template">
-
+    <div class="weather_plot_measure"></div>
     <div id="carousel-image-and-text" class="touchcarousel">
         <ul id="touchcarousel-container" class="touchcarousel-container"/>
     </div>

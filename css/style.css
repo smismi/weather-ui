@@ -1508,6 +1508,7 @@ body {
 	background-image: url('../i/icons/weather-ico-sde9c437420.png');
 	background-position: 7px -1248px;
 	background-repeat: no-repeat;
+    background: #987;
 }
 .weather_plot_measure .weather_plot_measure_top {
 	position: absolute;
@@ -1535,6 +1536,7 @@ body {
 	display: none;
 	width: 1000px;
 	border: 1px solid #ededed;
+    position: relative;
 }
 
 .day_night {

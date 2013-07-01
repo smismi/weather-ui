@@ -27,12 +27,14 @@ function Plot(dataset, colorset, width, height, container) {
     };
 
     this.drawBlanket = function() {
+
+
         for (var i = 0, ii = data.length; i < ii; i++) {
             var y = Math.round(height - bottomgutter - Y * data[i]),
                 x = Math.round(leftgutter + X * (i + .5));
 
 
-            blanket.push(r.rect(leftgutter + X * i, 0, X, height - bottomgutter).attr({stroke: "none", fill: "#fff", opacity: 0}));
+            blanket.push(r.rect(leftgutter + X * i, 0, X, height - bottomgutter).attr({stroke: "#f00", fill: "#f4f", opacity: 0}));
             var rect = blanket[blanket.length - 1];
 
             (function (x, y, i) {
@@ -88,6 +90,22 @@ function Plot(dataset, colorset, width, height, container) {
     }
 
 
+	this.drawTicks = function() {
+
+		for (var i = 0, ii = 10; i <= ii; i++) {
+
+			if (i === ii) {
+				ticks.push(r.rect(0, this.height - 1, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+				return;
+			}
+
+			ticks.push(r.rect(0, this.height/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+
+
+		}
+
+
+ 	}
 
 
 
@@ -131,7 +149,8 @@ function Plot(dataset, colorset, width, height, container) {
 
           data = dataset[i];
     }
-
+	this.value_max = max;
+	this.value_min = min;
 
     X = (width - leftgutter) / data.length,
     Y = (height - bottomgutter - topgutter) / (max-min);
@@ -161,11 +180,13 @@ function Plot(dataset, colorset, width, height, container) {
 
 
 
-
-
         var blanket = r.set();
         this.drawBlanket();
         blanket.toFront();
+
+//        var ticks = r.set();
+//        this.drawTicks();
+//		ticks.toFront();
 
         return this;
 
