@@ -129,6 +129,14 @@ W.Views.OneDay = Backbone.View.extend({
 
 		return this;
 	},
+	events : {
+		"click" : "slideTo"
+	},
+	slideTo : function() {
+
+		W.EventsDays.trigger(W.EventsDays.GETACTIVEDAY, this.collection.indexOf(this.model));
+
+	},
 	modelReformated: function (model) {
 
 		var d = new Date(model.get("date"));
@@ -260,7 +268,7 @@ W.Views.OneWeek = Backbone.View.extend({
 	},
 	renderEach: function(model) {
 
-		var day = new W.Views.OneDay({model: model});
+		var day = new W.Views.OneDay({model: model, collection: this.collection});
 
 
 		this.$el.append(day.$el);
@@ -356,6 +364,10 @@ W.Views.FullWeek = Backbone.View.extend({
 
 	initialize: function() {
 		this.render().carouselize().plotarize();
+
+
+		W.EventsDays.on(W.EventsDays.GETACTIVEDAY, this.onSetActiveDay, this)
+
 	},
 	render: function() {
 
@@ -392,15 +404,20 @@ W.Views.FullWeek = Backbone.View.extend({
 			scrollbar: true
 		});
 
-		carousel = $("#carousel-image-and-text").data("touchCarousel");
-		carousel.items[0].item.append("	<div id=\"weather_plot_big\" style=\"position: absolute; top:0; left:20px; width: 0; height: 0;\"></div>")
+		this.carousel = $("#carousel-image-and-text").data("touchCarousel");
+		this.carousel.items[0].item.append("	<div id=\"weather_plot_big\" style=\"position: absolute; top:0; left:20px; width: 0; height: 0;\"></div>")
  		return this;
 	},
 	plotarize: function () {
 
 		var full_week_plot = new W.Views.FullWeekPlot({collection: this.collection});
 
-	}
+	},
+	onSetActiveDay: function (obj) {
+
+		this.carousel.goTo(obj);
+
+	},
 })
 
 
