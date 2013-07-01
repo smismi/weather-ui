@@ -64,8 +64,6 @@ W.Views.Locals = Backbone.View.extend({
 
 		}, this);
 
-		$("#goroda").append(this.$el);
-
 		return this;
 	},
 	renderEach: function(model) {
@@ -342,7 +340,7 @@ W.Views.FullDay = Backbone.View.extend({
 	},
 	getDayLight: function(model) {
 
-		var suncalc = SunCalc.getTimes(new Date(this.model.get("date")), 55.7, 37.5);
+		var suncalc = SunCalc.getTimes(new Date(model.get("date")), Math.floor(90*Math.random() - 90), Math.floor(180*Math.random() - 180));
 
 		this.$el.append("<div class=\"day_night\"><div class=\"tooltip tooltip_sunrise\"> Рассвет (" + suncalc.dawn.getHours() + ":" + suncalc.dawn.getMinutes() + ") <i></i></div><div class=\"tooltip tooltip_sundown\"> Закат (" + suncalc.dusk.getHours() + ":" + suncalc.dusk.getMinutes() + ") <i></i></div></div>")
 
@@ -385,7 +383,7 @@ W.Views.FullWeek = Backbone.View.extend({
 	},
 	carouselize: function () {
 
-   		$("#carousel-image-and-text").touchCarousel({
+		$("#carousel-image-and-text").touchCarousel({
 			pagingNav: true,
 			snapToItems: true,
 			itemsPerMove: 1,
