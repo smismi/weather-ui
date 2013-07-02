@@ -417,13 +417,14 @@ W.Views.FullWeek = Backbone.View.extend({
 
 		this.carousel.goTo(obj);
 
-	},
+	}
 })
 
 
 
 W.Views.WeekPlot = Backbone.View.extend({
 	_el: "weather_plot",
+	_el_ticks: "weather_plot_measure",
 	initialize: function() {
 		this.render();
 	},
@@ -439,24 +440,26 @@ W.Views.WeekPlot = Backbone.View.extend({
 
 		}, this);
 		$("#" + this._el).html("");
+		$("#" + this._el_ticks).html("");
 
 
 
-		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el);
+		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el, this._el_ticks);
 
 		return this;
 	}
 })
 
 W.Views.FullWeekPlot = Backbone.View.extend({
-	el: "#weather_plot_big",
 	_el: "weather_plot_big",
+	_el_ticks: "weather_plot_measure2",
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
-		this.$el.html("");
-//		debugger;
+		$("#" + this._el).html("");
+		$("#" + this._el_ticks).html("");
+
 		var bigdata = [
 //			24, 22, 20, 23,
 //			55, 23, 20, 23,
@@ -470,7 +473,7 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
 			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
 			100 * Math.random()];
-		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el);
+		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el, this._el_ticks);
 
 		return this;
 	}
