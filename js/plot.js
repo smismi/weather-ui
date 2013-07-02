@@ -90,22 +90,40 @@ function Plot(dataset, colorset, width, height, container, grid) {
         alert(1);
     }
 
+//
+//	this.drawTicks = function() {
+//		for (var i = 0, ii = 10; i <= ii; i++) {
+//
+////			if (i === ii) {
+////				ticks.push(g.rect(0, this.height - bottomgutter, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+////				ticks.push(g.text(15, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "3").attr({fill: '#ff0000'}));
+////				return;
+////			}
+//
+//			this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+//			this.ticks.push(g.text(16, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "+" + i).attr({fill: '#fff', 'font-size':7, 'font-family':"Arial Narrow"}));
+// 		}
+//
+//
+// 	}
 
 	this.drawTicks = function() {
 		for (var i = 0, ii = 10; i <= ii; i++) {
+			if (i === 0 ) {
+				this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 3, 1).attr({stroke: "none", fill: "#858f97", opacity: 1}));
+				this.ticks.push(g.text(12, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, this.value_min).attr({fill: '#858f97', 'font-size':8, 'font-weight':"bold", 'font-family':"Arial"}));
+			} else if (i === ii ) {
+				this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 3, 1).attr({stroke: "none", fill: "#858f97", opacity: 1}));
+				this.ticks.push(g.text(12, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, this.value_max).attr({fill: '#858f97', 'font-size':8, 'font-weight':"bold", 'font-family':"Arial"}));
+			} else {
+				this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 1, 1).attr({stroke: "none", fill: "#858f97", opacity: 1}));
+			}
 
-//			if (i === ii) {
-//				ticks.push(g.rect(0, this.height - bottomgutter, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
-//				ticks.push(g.text(15, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "3").attr({fill: '#ff0000'}));
-//				return;
-//			}
-
-			this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
-			this.ticks.push(g.text(16, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "+" + i).attr({fill: '#fff', 'font-size':7, 'font-family':"Arial Narrow"}));
- 		}
+//			this.ticks.push(g.text(12, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "+" + i).attr({fill: '#f00', 'font-size':11, 'font-weight':"bold", 'font-family':"Arial Narrow"}));
+		}
 
 
- 	}
+	}
 
 
 
@@ -137,6 +155,10 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
     var r = Raphael(this.container, this.width, this.height);
     var g = Raphael(this.grid, 20, this.height);
+
+
+
+
 
 
 
