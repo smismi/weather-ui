@@ -1505,10 +1505,8 @@ body {
 	top: 0;
 	bottom: 0;
 	position: absolute;
-	background-image: url('../i/icons/weather-ico-sde9c437420.png');
 	background-position: 7px -1248px;
 	background-repeat: no-repeat;
-    background: #987;
 }
 .weather_plot_measure .weather_plot_measure_top {
 	position: absolute;
@@ -1545,6 +1543,8 @@ body {
 	left: -30px;
 	width: 1000px;
 	background: url("../i/pages/static_doc/weather2/night-day.png") 40px 0 repeat-x;
+
+	display: none;
 }
 .day_night .tooltip {
 	background: rgba(0, 0, 0, 0.6);
@@ -1574,11 +1574,13 @@ body {
 	position: absolute;
 	top: 0;
 	left: 790px;
+	display: none;
 }
 
 .day_part {
 	border-bottom: 14px solid #152d9c;
 	float: left;
+	display: none;
 	width: 190px;
 	margin: 0 0 0 0;
 	text-align: center;

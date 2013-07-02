@@ -486,7 +486,7 @@ W.Views.WeekPlot = Backbone.View.extend({
 
 
 
-		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el, this._el_ticks);
+//		new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el, this._el_ticks);
 
 		return this;
 	}
@@ -503,19 +503,21 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 		$("#" + this._el_ticks).html("");
 
 		var bigdata = [
-//			24, 22, 20, 23,
+				24, 23, 20, 15
+			]
 //			55, 23, 20, 23,
 //			22, 22, 22, 20,
 //			23, 22, 22, 20,
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random(), 100 * Math.random(), 100 * Math.random(), 100 * Math.random(),
-			100 * Math.random()];
-		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el, this._el_ticks);
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
+//			Math.floor(25 * Math.random())]
+			;
+		new Plot([bigdata], ["rgba(255,102,0,1)"], 400, 270, this._el, this._el_ticks);
 
 		return this;
 	}
