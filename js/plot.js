@@ -101,7 +101,7 @@ function Plot(dataset, colorset, width, height, container, grid) {
 //			}
 
 			this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
-			this.ticks.push(g.text(16, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, i).attr({fill: '#ff0000'}));
+			this.ticks.push(g.text(16, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "+" + i).attr({fill: '#fff', 'font-size':7, 'font-family':"Arial Narrow"}));
  		}
 
 

@@ -1502,7 +1502,7 @@ body {
 
 .weather_plot_measure {
 	width: 20px;
-	top: 2px;
+	top: 0;
 	bottom: 0;
 	position: absolute;
 	background-image: url('../i/icons/weather-ico-sde9c437420.png');
