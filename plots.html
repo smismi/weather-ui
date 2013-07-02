@@ -92,35 +92,12 @@
 </div>
 <div class="weather_row1_wrap">
 	<div id='one' class="pulldown">
-		<a href="#" class="more"><i></i>Подробнее</a>
-		<a href="#" class="less"><i></i>Свернуть</a>
+		<a href="#" class="more" id="more"><i></i>Подробнее</a>
+		<a href="#" class="less" id="less"><i></i>Свернуть</a>
 	</div>
 
 </div>
 </div>
-
-<script type="text/javascript">
-	$(document).ready(function(){
- 		$(".more").on("click", function () {
-			$("#one").animate({width: 1000}, 240, function () {
-				$("#two").css({height: 0}).show().animate({height: 456});
-				$(this).addClass("opened");
-			});
-			return false;
-		})
-		$(".less").on("click", function () {
-			$("#two").animate({height: 0}, 140, function () {
-				$("#one").animate({width: 720}).removeClass("opened");
-				$(this).hide();
-			});
-			return false;
-		});
-
-
-
-
-	});
-</script>
 
 
 <script id="template_local" type="text/template">
@@ -181,11 +158,12 @@
 </script>
 
 <script id="template_fullweek" type="text/template">
-    <div class="weather_plot_measure" id="weather_plot_measure2">
-    </div>
+
     <div id="carousel-image-and-text" class="touchcarousel">
         <ul id="touchcarousel-container" class="touchcarousel-container"/>
     </div>
+	<div class="weather_plot_measure" id="weather_plot_measure2">
+	</div>
 </script>
 
 </body>

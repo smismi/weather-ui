@@ -1,12 +1,12 @@
 
 
-function Plot(dataset, colorset, width, height, container, ticks) {
+function Plot(dataset, colorset, width, height, container, grid) {
     this.dataset = dataset;
     this.color = colorset;
     this.width = width;
     this.height = height;
     this.container = container;
-    this.ticks = ticks;
+    this.grid = grid;
     this.getAnchors = function(p1x, p1y, p2x, p2y, p3x, p3y) {
         var l1 = (p2x - p1x) / 3,
             l2 = (p3x - p2x) / 3,
@@ -94,15 +94,15 @@ function Plot(dataset, colorset, width, height, container, ticks) {
 	this.drawTicks = function() {
 		for (var i = 0, ii = 10; i <= ii; i++) {
 
-			if (i === ii) {
-				ticks.push(g.rect(0, this.height - bottomgutter, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
-				return;
-			}
+//			if (i === ii) {
+//				ticks.push(g.rect(0, this.height - bottomgutter, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+//				ticks.push(g.text(15, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, "3").attr({fill: '#ff0000'}));
+//				return;
+//			}
 
-			ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
-
-
-		}
+			this.ticks.push(g.rect(0, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, 12, 1).attr({stroke: "none", fill: "#f00", opacity: 1}));
+			this.ticks.push(g.text(16, topgutter + (this.height -  bottomgutter - topgutter)/ii * i, i).attr({fill: '#ff0000'}));
+ 		}
 
 
  	}
@@ -136,7 +136,7 @@ function Plot(dataset, colorset, width, height, container, ticks) {
 
 
     var r = Raphael(this.container, this.width, this.height);
-    var g = Raphael(this.ticks, 20, this.height);
+    var g = Raphael(this.grid, 20, this.height);
 
 
 
@@ -187,9 +187,9 @@ function Plot(dataset, colorset, width, height, container, ticks) {
         this.drawBlanket();
         blanket.toFront();
 
-        var ticks = g.set();
+        this.ticks = g.set();
         this.drawTicks();
-		ticks.toFront();
+		this.ticks.toFront();
 
         return this;
 

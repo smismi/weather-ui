@@ -76,6 +76,47 @@ W.Views.Locals = Backbone.View.extend({
 	}
 });
 
+W.Views.Expand = Backbone.View.extend({
+	el: "#one",
+	initialize: function() {
+		this.render();
+	},
+	expandFullView: function() {
+
+		$("#one").animate({width: 1000}, 240, function () {
+			$("#two").css({height: 0}).show().animate({height: 456});
+
+
+			$(this).addClass("opened");
+
+			new W.Views.FullWeek({
+				collection: collection_days
+			});
+
+		});
+		return false;
+
+
+
+	},
+	collapseFullView: function() {
+
+		$("#less").on("click", function () {
+			$("#two").animate({height: 0}, 140, function () {
+				$("#one").animate({width: 720}).removeClass("opened");
+				$(this).hide();
+			});
+			return false;
+		});
+
+	},
+	events : {
+		"click .more": "expandFullView",
+		"click .less": "collapseFullView"
+	}
+
+});
+
 
 
 W.Views.Add = Backbone.View.extend({
@@ -246,7 +287,7 @@ W.Views.OneDay = Backbone.View.extend({
 W.Views.OneWeek = Backbone.View.extend({
 	tagName: "p",
 	initialize: function() {
-		this.render().redrawFullWeek();
+		this.render();
 		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.onSetActive, this)
 		this.collection.on('reset', this.render, this);
 		this.collection.on('reset', this.redrawFullWeek, this);
@@ -260,7 +301,7 @@ W.Views.OneWeek = Backbone.View.extend({
 
 		}, this);
 
-		var week_plot = new W.Views.WeekPlot({collection: this.collection});
+		new W.Views.WeekPlot({collection: this.collection});
 
 		$("#week").append(this.$el);
 
@@ -283,9 +324,10 @@ W.Views.OneWeek = Backbone.View.extend({
 	},
 	redrawFullWeek : function (obj) {
 
-		var fullweek = new W.Views.FullWeek({
+		new W.Views.FullWeek({
 			collection: collection_days
 		});
+
 		//		this.render(obj)
 
 	}

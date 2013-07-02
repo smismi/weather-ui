@@ -17,6 +17,9 @@ $(document).ready(function () {
 	});
 
 
+	var view_expand = new W.Views.Expand();
+
+
 	var addItem = new W.Views.Add();
 
 
