@@ -6,6 +6,10 @@ function Plot(dataset, colorset, width, height, container, grid) {
 	this.container = container;
 	this.grid = grid;
 	this.getAnchors = function (p1x, p1y, p2x, p2y, p3x, p3y) {
+
+
+//		console.log(p1x, p1y, p2x, p2y, p3x, p3y)
+
 		var l1 = (p2x - p1x) / 3,
 			l2 = (p3x - p2x) / 3,
 			a = Math.atan((p2x - p1x) / Math.abs(p2y - p1y)),
@@ -94,14 +98,17 @@ function Plot(dataset, colorset, width, height, container, grid) {
 				bgpp = ["M", x, y, "C", x, y];
 			}
 			if (i && i < ii - 1) {
-//				console.log(i, data[i - 1], data[i + 1]);
+//				console.log("verse" + i, data[i - 1], data[i + 1]);
 
 				var Y0 = Math.round(height - bottomgutter - Y * data[i - 1] + min * Y),
 					X0 = Math.round(leftgutter + X * (i - .5)),
 					Y2 = Math.round(height - bottomgutter - Y * data[i + 1] + min * Y),
 					X2 = Math.round(leftgutter + X * (i + 1.5));
 
-				console.log(X0, Y0, x, y, X2, Y2);
+
+//				console.log("verse i, i- 0.5, i+1.5: " + i, i - .5, i + 1.5);
+
+
 				var a = this.getAnchors(X0, Y0, x, y, X2, Y2);
 				bgpp = bgpp.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
 			}
@@ -113,27 +120,62 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
 
 
+		for (var i = 0, ii = data.length; i < ii; i++) {
+			var y = Math.round(height - bottomgutter - Y * data[i] + min * Y),
+				x = Math.round(leftgutter + X * (i + .5));
+			if (!i) {
+				p = ["M", x, y, "C", x, y];
+			}
+			if (i && i < ii - 1) {
+//				console.log("verse" + i, data[i - 1], data[i + 1]);
+
+				var Y0 = Math.round(height - bottomgutter - Y * data[i - 1] + min * Y),
+					X0 = Math.round(leftgutter + X * (i - .5)),
+					Y2 = Math.round(height - bottomgutter - Y * data[i + 1] + min * Y),
+					X2 = Math.round(leftgutter + X * (i + 1.5));
+
+
+//				console.log("verse i, i- 0.5, i+1.5: " + i, i - .5, i + 1.5);
+
+
+				var a = this.getAnchors(X0, Y0, x, y, X2, Y2);
+				p = p.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
+			}
+
+		}
+
 
 		for (var i =  data.length, ii = 0; i > ii; i--) {
 			var y = Math.round(height - bottomgutter - Y * data[i - 1] + min * Y),
 				x = Math.round(leftgutter + X * (i - .5));
 			if (i === data.length) {
-				p = ["M", x, y, "C", x, y];
+
+
+//				p = p.concat(["L", x, y - 10, "C", x, y - 10]);
 			}
 			if (i !=  data.length && i > ii + 1) {
- //				p = p.concat([x, y])
+
+//				console.log("reverse" + i, data[i], data[i - 2]);
+
+				//				p = p.concat([x, y])
 
 				var Y0 = Math.round(height - bottomgutter - Y * data[i] + min * Y),
-					X0 = Math.round(leftgutter + X * (i - .5)),
+					X0 = Math.round(leftgutter + X * (i - 1.5)),
 					Y2 = Math.round(height - bottomgutter - Y * data[i - 2] + min * Y),
-					X2 = Math.round(leftgutter + X * (i + 1.5));
+					X2 = Math.round(leftgutter + X * (i + 0.5));
 
-				var a = this.getAnchors(X0, Y0, x, y, X2, Y2);
-				console.log(a.x1, a.y1, x, y, a.x2, a.y2);
- 				p = p.concat([a.x2, a.y2, x, y, a.x1, a.y1]);
+				var a = this.getAnchors(X0, Y2, x, y - 2, X2, Y0);
+
+//				console.log(a.x1, a.y1, x, y, a.x2, a.y2);
+//				console.log("reverse X0, x, X2: " + X2, x, X0);
+//				console.log("reverse Y0, y, y2: " + Y0, y, Y2);
+
+//				console.log("reverse i, i-0.5, i+1.5: " + i, i - 1.5, i + 0.5);
+
+				p = p.concat([a.x2, a.y2, x, y - 2, a.x1, a.y1]);
 			}
 		}
-		p = p.concat([x, y, x, y, "z"]);
+		p = p.concat([x, y - 2, x, y - 2, "z"]);
 
 
 		return {_p: p, _bgpp: bgpp}
@@ -203,14 +245,14 @@ function Plot(dataset, colorset, width, height, container, grid) {
 			color = colorset[i];
 
 
-		var path = r.path().attr({stroke: "#f00", "stroke-width": 1, "stroke-linejoin": "round"}),
+		var path = r.path().attr({stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#f00:5-#00f:95", "fill-opacity": 0.5}),
 			bgp = r.path().attr({stroke: "f00", opacity: 1, fill: color});
 
 
 		draw_day = this.drawGradient(data);
 
 		path.attr({path: draw_day._p});
-		bgp.attr({path: draw_day._bgpp});
+//		bgp.attr({path: draw_day._bgpp});
 
 		path.toFront();
 
