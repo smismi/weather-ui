@@ -251,6 +251,10 @@ function Plot(dataset, colorset, width, height, container, grid) {
 			bgp = r.path().attr({stroke: "f00", opacity:.2, fill: color});
 
 
+//		var path = r.path().attr({"opacity": "1", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#006699:0-#ffa800:70-#ff6600:100"}),
+//		bgp = r.path().attr({stroke: "f00", opacity:.2, fill: color});
+
+
 		draw_day = this.draw(data);
 		draw_day_g = this.drawGradient(data);
 
