@@ -210,7 +210,7 @@ function Plot(dataset, colorset, width, height, container, grid) {
 		draw_day = this.drawGradient(data);
 
 		path.attr({path: draw_day._p});
-//		bgp.attr({path: draw_day._bgpp});
+		bgp.attr({path: draw_day._bgpp});
 
 		path.toFront();
 
