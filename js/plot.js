@@ -118,7 +118,7 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
 		bgpp = bgpp.concat([x, y, x, y, "z"]);
 
-
+		var delta = 2;
 
 		for (var i = 0, ii = data.length; i < ii; i++) {
 			var y = Math.round(height - bottomgutter - Y * data[i] + min * Y),
@@ -144,6 +144,8 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
 		}
 
+		p = p.concat([x, y, x, y, "L", x, y - delta]);
+
 
 		for (var i =  data.length, ii = 0; i > ii; i--) {
 			var y = Math.round(height - bottomgutter - Y * data[i - 1] + min * Y),
@@ -151,7 +153,7 @@ function Plot(dataset, colorset, width, height, container, grid) {
 			if (i === data.length) {
 
 
-//				p = p.concat(["L", x, y - 10, "C", x, y - 10]);
+				p = p.concat(["C", x, y - delta]);
 			}
 			if (i !=  data.length && i > ii + 1) {
 
@@ -164,7 +166,7 @@ function Plot(dataset, colorset, width, height, container, grid) {
 					Y2 = Math.round(height - bottomgutter - Y * data[i - 2] + min * Y),
 					X2 = Math.round(leftgutter + X * (i + 0.5));
 
-				var a = this.getAnchors(X0, Y2, x, y - 2, X2, Y0);
+				var a = this.getAnchors(X0, Y2, x, y - delta, X2, Y0);
 
 //				console.log(a.x1, a.y1, x, y, a.x2, a.y2);
 //				console.log("reverse X0, x, X2: " + X2, x, X0);
@@ -172,10 +174,10 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
 //				console.log("reverse i, i-0.5, i+1.5: " + i, i - 1.5, i + 0.5);
 
-				p = p.concat([a.x2, a.y2, x, y - 2, a.x1, a.y1]);
+				p = p.concat([a.x2, a.y2, x, y - delta, a.x1, a.y1]);
 			}
 		}
-		p = p.concat([x, y - 2, x, y - 2, "z"]);
+		p = p.concat([x, y - delta, x, y - delta, "z"]);
 
 
 		return {_p: p, _bgpp: bgpp}
@@ -245,8 +247,11 @@ function Plot(dataset, colorset, width, height, container, grid) {
 			color = colorset[i];
 
 
-		var path = r.path().attr({stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#f00:5-#00f:95", "fill-opacity": 0.5}),
+		var path = r.path().attr({"opacity": "1", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#99c2d6:0-#eec2a3:50-#ffc299:100"}),
 			bgp = r.path().attr({stroke: "f00", opacity: 1, fill: color});
+
+//		var path = r.path().attr({"opacity": "0", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#006699:0-#ffa800:70-#ff6600:100"}),
+//			bgp = r.path().attr({stroke: "f00", opacity: 1, fill: color});
 
 
 		draw_day = this.drawGradient(data);

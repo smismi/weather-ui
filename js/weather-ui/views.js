@@ -518,7 +518,7 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 			Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()), Math.floor(25 * Math.random()),
 			Math.floor(25 * Math.random())]
 			;
-		new Plot([bigdata], ["rgba(255,102,0,1)"], 7400, 270, this._el, this._el_ticks);
+		new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 170, this._el, this._el_ticks);
 
 		return this;
 	}
