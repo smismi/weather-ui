@@ -248,17 +248,16 @@ function Plot(dataset, colorset, width, height, container, grid) {
 
 
 		var path = r.path().attr({"opacity": "1", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#99c2d6:0-#eec2a3:50-#ffc299:100"}),
-			bgp = r.path().attr({stroke: "f00", opacity: 1, fill: color});
-
-//		var path = r.path().attr({"opacity": "0", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#006699:0-#ffa800:70-#ff6600:100"}),
-//			bgp = r.path().attr({stroke: "f00", opacity: 1, fill: color});
+			bgp = r.path().attr({stroke: "f00", opacity:.2, fill: color});
 
 
-		draw_day = this.drawGradient(data);
+		draw_day = this.draw(data);
+		draw_day_g = this.drawGradient(data);
 
-		path.attr({path: draw_day._p});
-//		bgp.attr({path: draw_day._bgpp});
+		path.attr({path: draw_day_g._p});
+		bgp.attr({path: draw_day._bgpp});
 
+		bgp.toFront();
 		path.toFront();
 
 
