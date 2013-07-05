@@ -486,7 +486,7 @@ W.Views.WeekPlot = Backbone.View.extend({
 
 
 
-		var weather_by_day = new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"], 720, 70, this._el, this._el_ticks);
+		new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"],[["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1], ["#fff", 1]], 720, 70, this._el, this._el_ticks);
 
 		return this;
 	}
@@ -515,7 +515,7 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
 			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
 			Math.floor(25 * Math.random() )];
-		var weather_by_hour = new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el, this._el_ticks);
+//		new Plot([bigdata], ["rgba(255,102,0,1)"], 5560, 270, this._el, this._el_ticks);
 
 		return this;
 	}

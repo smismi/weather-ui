@@ -1,8 +1,9 @@
 
 
-function Plot(dataset, colorset, width, height, container, grid) {
+function Plot(dataset, colorset, fillset, width, height, container, grid) {
     this.dataset = dataset;
     this.color = colorset;
+    this.fillset = fillset;
     this.width = width;
     this.height = height;
     this.container = container;
@@ -183,11 +184,12 @@ function Plot(dataset, colorset, width, height, container, grid) {
     for (var i = 0, ii = dataset.length; i < ii; i++) {
 
         var data = dataset[i],
+	        fill = fillset[i],
             color = colorset[i];
 
 
         var path = r.path().attr({stroke: color, "stroke-width": 3, "stroke-linejoin": "round"}),
-            bgp = r.path().attr({stroke: "none", opacity: 1, fill: 'none'});
+            bgp = r.path().attr({stroke: "none", opacity: 1, fill: fill[0], "fill-opacity": fill[1]});
 
 
         draw_day = this.draw(data);
