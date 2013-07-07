@@ -24,7 +24,7 @@
 	<script src="js/weather-ui/events.js"></script>
 	<script src="js/weather-ui/models.js"></script>
 	<script src="js/weather-ui/collection.js"></script>
-	<script src="js/weather-ui/views.js"></script>
+	<script src="js/weather-ui/views20.js"></script>
 
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -52,28 +52,12 @@
 	<div class="clear"></div>
 </div>
 <div class="weather_row1_wrap">
+
+    <div id="actual_condition">
+        ghbdtn
+    </div>
 	<div class="weather_row1_informer" style="margin-bottom: 0">
-		<div id="actual_day" class="weather_actual_main">
-			<div class="weather_actual_big_ico"></div>
-			<p class="weather_actual_update">18:00</p>
 
-			<p class="weather_actual_temp">+20<span>°C</span></p>
-
-			<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-		</div>
-		<div class="weather_actual_description">
-
-
-			<p class="weather_actual_title">Москва</p>
-
-			<p class="weather_actual_preview">Стихия</p>
-
-			<p class="weather_actual_left">Магнитная обстановка: <a href="">Спокойная</a></p>
-
-			<p class="weather_actual_right"><a href="">Климатическая норма</a></p>
-
-
-		</div>
 		<div class="clear"></div>
 		<div id="week" class="days"></div>
 
@@ -100,6 +84,31 @@
 </div>
 
 
+<script id="template_actual" type="text/template">
+
+    <div id="actual_day" class="weather_actual_main">
+        <div class="weather_actual_big_ico"><%= weather_conditions %></div>
+        <p class="weather_actual_update"><%= date %></p>
+
+        <p class="weather_actual_temp"><%= temp %><span>°C</span></p>
+
+        <p class="weather_wind"><i><em></em></i><%= wind_dir %> : <%= wind_speed %> м/с</p>
+    </div>
+    <div class="weather_actual_description">
+
+
+        <p class="weather_actual_title"><%= local %></p>
+
+        <p class="weather_actual_preview"><%= text %></p>
+
+        <p class="weather_actual_left">Магнитная обстановка: <a href=""><%= magnitize %></a></p>
+
+        <p class="weather_actual_right"><a href="">Климатическая норма : <%= climat_norm %></a></p>
+
+
+    </div>
+
+</script>
 <script id="template_local" type="text/template">
 
 		<div class="weather_localname"><%= name %></div>

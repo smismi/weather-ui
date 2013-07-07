@@ -76,6 +76,7 @@ W.Views.Locals = Backbone.View.extend({
 	}
 });
 
+
 W.Views.Expand = Backbone.View.extend({
 	el: "#one",
 	initialize: function() {
@@ -137,6 +138,9 @@ W.Views.Add = Backbone.View.extend({
 });
 
 
+
+// common view
+
 W.Views.Today = Backbone.View.extend({
 	tagName: "div",
 	template: '#template_today',
@@ -151,6 +155,10 @@ W.Views.Today = Backbone.View.extend({
 		return this;
 	}
 });
+
+
+
+// simple view
 
 
 W.Views.OneDay = Backbone.View.extend({
@@ -332,6 +340,11 @@ W.Views.OneWeek = Backbone.View.extend({
 
 	}
 });
+
+
+
+// full view
+
 
 
 W.Views.Hour = Backbone.View.extend({
