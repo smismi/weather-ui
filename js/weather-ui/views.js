@@ -99,16 +99,19 @@ W.Views.OneWeek = Backbone.View.extend({
 
 
 
-//		var settings = {
-//			dataset: [max_temp_data, min_temp_data],
-//			colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
-//			fillset: [["url(data:)", 0.1],["#fff", 1]],
-//			width: 720,
-//			height: 70,
-//			container: "weather_plot",
-//			grid: "weather_plot_measure"
-//		}
-//		new W.Views.Plot({collection: this.collection, settings: settings});
+		var settings = {
+			dataset: [max_temp_data, min_temp_data],
+			colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
+			fillset: [["url(data:)", 0.1],["#fff", 1]],
+			width: 720,
+			height: 70,
+			container: "weather_plot",
+			grid: "weather_plot_measure"
+		}
+
+
+
+		new W.Views.Plot({collection: this.collection, model: new Backbone.Model(settings)});
 
 		$("#week").append(this.$el);
 
