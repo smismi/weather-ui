@@ -10,7 +10,7 @@ W.Views.Actual = Backbone.View.extend({
 
 		model = this.collection.models[this.collection.length - 1];
 
-		//TODO: тут написала хуйня - переписать
+		//TODO: тут Залепа!!!!!!!!!!!!!!
 
 		var template = _.template( $(this.template).html() );
 
@@ -83,13 +83,32 @@ W.Views.OneWeek = Backbone.View.extend({
 	render: function() {
 		this.$el.empty();
 		console.log("render", arguments);
+
+		var max_temp_data = [];
+		var min_temp_data = [];
+
 		this.collection.each(function(day){
 
 			this.renderEach(day);
+			max_temp_data.push(day.get("tmax"));
+			min_temp_data.push(day.get("tmin"));
 
 		}, this);
 
 		new W.Views.WeekPlot({collection: this.collection});
+
+
+
+//		var settings = {
+//			dataset: [max_temp_data, min_temp_data],
+//			colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
+//			fillset: [["url(data:)", 0.1],["#fff", 1]],
+//			width: 720,
+//			height: 70,
+//			container: "weather_plot",
+//			grid: "weather_plot_measure"
+//		}
+//		new W.Views.Plot({collection: this.collection, settings: settings});
 
 		$("#week").append(this.$el);
 
@@ -199,6 +218,7 @@ W.Views.WeekPlot = Backbone.View.extend({
 		}, this);
 		$("#" + this._el).html("");
 		$("#" + this._el_ticks).html("");
+
 
 
 
@@ -392,8 +412,9 @@ W.Views.FullWeekPlot = Backbone.View.extend({
 			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
 			Math.floor(25 * Math.random() )
 		];
-		new Plot([bigdata], ["rgba(255,102,0,1)"], [""], 5510, 150, this._el, this._el_ticks);
+		new Plot([bigdata], ["rgba(255,102,0,1)"], [""], 1500, 150, this._el, this._el_ticks);
 
 		return this;
 	}
-})
+});
+

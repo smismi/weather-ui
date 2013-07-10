@@ -39,29 +39,31 @@ W.Models.Day = Backbone.Model.extend({
 				dusk: suncalc.dusk.getHours() + ":" + (suncalc.dusk.getMinutes()<10?'0':'') + suncalc.dusk.getMinutes()
 
 			};
+		},
+		"getWind": function () {
+			return W.Utils.Wind(this.wind_dir);
+		},
+		"getIconedCondition": function () {
+			return W.Utils.WeatherCondition(this.weather_conditions);
 		}
 	}
 });
 
 
 
-W.Models.Hour = Backbone.Model.extend();
+W.Models.Hour = W.Models.Day.extend();
 
 W.Models.Local = Backbone.Model.extend();
 
-W.Models.Actual = Backbone.Model.extend({
-	defaults:
-	{
-		"id" : "NON",
-		"local" : "NON",
-		"date" : "NON",
-		"temp" : "NON",
-		"weather_conditions": "NON",
-		"wind_dir" : "NON",
-		"wind_speed" : "NON",
-		"text" : "NON",
-		"magnitize" : "NON",
-		"climat_norm" : "NON"
-	}
-
+W.Models.Actual = W.Models.Day.extend({
+	defaults: _.extend({},W.Models.Day.prototype.defaults,
+		{
+			"id" : "NON",
+			"local" : "NON",
+			"update_time" : "NON",
+			"text" : "NON",
+			"magnitize" : "NON",
+			"climat_norm" : "NON"
+		}
+	)
 });
