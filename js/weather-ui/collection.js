@@ -1,40 +1,24 @@
 //COLLECTIONS
 
+
 W.Collections.Actual = Backbone.Collection.extend({
-	model: W.Models.Actual,
-    getByCondition: function(local_id){
-        return this.filter(function(actual) {
-            return actual.get('id') == local_id
-        });
-    }
+	model: W.Models.Actual
 })
 
 var actual_forecasts = new W.Collections.Actual([
-    {
-        "id" : "0",
-        "local" : "MOSCOW",
-        "date" : "18:00",
-        "temp" : "+28",
-        "weather_conditions": "0",
-        "wind_dir" : "283",
-        "wind_speed" : "4",
-        "text" : "Оползень выползень с переменным но очень сильным ветром смоет нах всех",
-        "magnitize" : "0",
-        "climat_norm" : "тут климатическая норма для сравнения с текущей что б понять все плохо ли"
-    }
-//    ,{
-//        "date" : "218:00",
-//        "temp" : "-38",
-//        "weather_conditions": "2",
-//        "wind_dir" : "12",
-//        "wind_speed" : "1",
-//        "text" : "222222Оползень выползень с переменным но очень сильным ветром смоет нах всех",
-//        "magnitize" : "44",
-//        "climat_norm" : "222тут климатическая норма для сравнения с текущей что б понять все плохо ли"
-//
-//    }
+	{
+		"id" : "0",
+		"local" : "MOSCOW",
+		"date" : "18:00",
+		"temp" : "+28",
+		"weather_conditions": "0",
+		"wind_dir" : "283",
+		"wind_speed" : "4",
+		"text" : "Оползень выползень с переменным но очень сильным ветром смоет нах всех",
+		"magnitize" : "0",
+		"climat_norm" : "0"
+	}
 ])
-
 
 W.Collections.Days = Backbone.Collection.extend({
 	model: W.Models.Day

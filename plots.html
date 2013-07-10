@@ -24,7 +24,7 @@
 	<script src="js/weather-ui/events.js"></script>
 	<script src="js/weather-ui/models.js"></script>
 	<script src="js/weather-ui/collection.js"></script>
-	<script src="js/weather-ui/views20.js"></script>
+	<script src="js/weather-ui/views.js"></script>
 
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -83,97 +83,115 @@
 </div>
 </div>
 
-
 <script id="template_actual" type="text/template">
 
-    <div id="actual_day" class="weather_actual_main">
-        <div class="weather_actual_big_ico"><%= weather_conditions %></div>
-        <p class="weather_actual_update"><%= date %></p>
 
-        <p class="weather_actual_temp"><%= temp %><span>°C</span></p>
+	<div id="actual_day" class="weather_actual_main">
+		<div class="weather_actual_big_ico"><%= weather_conditions %></div>
+		<p class="weather_actual_update"><%= date %></p>
 
-        <p class="weather_wind"><i><em></em></i><%= wind_dir %> : <%= wind_speed %> м/с</p>
-    </div>
-    <div class="weather_actual_description">
+		<p class="weather_actual_temp"><%= temp %><span>°C</span></p>
+
+		<p class="weather_wind"><i><em></em></i><%= wind_dir %> : <%= wind_speed %> м/с</p>
+	</div>
+	<div class="weather_actual_description">
+
+		<p class="weather_change_local"><a href="#">Другой город</a></p>
+
+		<p class="weather_actual_title"><%= local %> <a href="#" class="add_to_favorites"><em></em></a></p>
+
+		<p class="weather_actual_preview"><%= text %></p>
+
+		<p class="weather_actual_left">Магнитная обстановка: <a href=""><%= magnitize %></a></p>
+
+		<p class="weather_actual_right">Климатическая норма : <a href=""><%= climat_norm %></a></p>
 
 
-        <p class="weather_actual_title"><%= local %></p>
+	</div>
 
-        <p class="weather_actual_preview"><%= text %></p>
-
-        <p class="weather_actual_left">Магнитная обстановка: <a href=""><%= magnitize %></a></p>
-
-        <p class="weather_actual_right"><a href="">Климатическая норма : <%= climat_norm %></a></p>
-
-
-    </div>
 
 </script>
+
 <script id="template_local" type="text/template">
 
-		<div class="weather_localname"><%= name %></div>
-		<span class="weather_localtemp"><i></i> +22°C</span>
-		<i class="close"></i>
+	<div class="weather_localname"><%= name %></div>
+	<span class="weather_localtemp"><i></i> +22°C</span>
+	<i class="close"></i>
 
 </script>
  
 <script id="template_day" type="text/template">
-	<div class="day_month"><%= date %></div>
-	<div class="day_week"><%= reformated_day_week %></div>
+
+	<div class="day_month"><%= getReformatedDate().day %></div>
+	<div class="day_week"><%= getReformatedDate().weekday %></div>
 	<div class="day_weather_ico">
-		<i class="c-cloudly"><%= ico_class %></i>
+		<i class="c-cloudly"></i>
 	</div>
 	<div class="day_temp"><%= tmax %><span> °C</span></div>
 	<div class="day_temp day_temp_night"><%= tmin %><span> °C</span></div>
 	<p class="weather_wind"><i><em></em></i><%= wind_dir %> = <%= windspeed %></p>
-</script>
 
+</script>
 
 <script id="template_today" type="text/template">
-    <div class="weather_actual_main">
-        <div class="weather_actual_big_ico"></div>
-        <p class="weather_actual_update">18:00</p>
-        <p class="weather_actual_temp">+20<span>°C</span></p>
-        <p class="weather_wind"><i><em></em></i>6-8 м/с</p>
-    </div>
-    <div class="weather_actual_description">
-        <p class="weather_actual_title">Москва</p>
-        <p class="weather_actual_preview">Стихия</p>
-        <p class="weather_actual_left">Магнитная обстановка: <a href="">Спокойная</a></p>
-        <p class="weather_actual_right"><a href="">Климатическая норма</a></p>
-    </div>
+
+	<div class="weather_actual_main">
+		<div class="weather_actual_big_ico"></div>
+		<p class="weather_actual_update">18:00</p>
+		<p class="weather_actual_temp">+20<span>°C</span></p>
+		<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+	</div>
+	<div class="weather_actual_description">
+		<p class="weather_actual_title">Москва</p>
+		<p class="weather_actual_preview">Стихия</p>
+		<p class="weather_actual_left">Магнитная обстановка: <a href="">Спокойная</a></p>
+		<p class="weather_actual_right"><a href="">Климатическая норма</a></p>
+	</div>
+
 </script>
 
+<script id="template_fullday" type="text/template">
 
+	<div class="fullday_item_date"><div class="day_month"><%= getReformatedDate().weekday %></div>
+		<div class="day_week"><%= getReformatedDate().day %></div></div>
+	<div class="day_night"><div class="tooltip tooltip_sunrise"><%= getSuncalcResult().dawn %><i></i></div><div class="tooltip tooltip_sundown"><%= getSuncalcResult().dusk %><i></i></div></div>
+
+
+
+</script>
 <script id="template_daypart" type="text/template">
 
-    <h1>0:00</h1>
 
-    <div class="vicious_circle">
-        <div class="vicious_circle_1">
-            <div class="day_weather_ico">
-                <i class="c-cloudly"></i>
-            </div>
-            <div class="day_temp"><%= tmax %><span> °C</span></div>
-        </div>
-    </div>
 
-    <p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+	<h1>0:00</h1>
 
-    <p class="weather_humidity"><i></i>0.5мм 85%</p>
+	<div class="vicious_circle">
+		<div class="vicious_circle_1">
+			<div class="day_weather_ico">
+				<i class="c-cloudly"></i>
+			</div>
+			<div class="day_temp"><%= tmax %><span> °C</span></div>
+		</div>
+	</div>
 
-    <p class="weather_pressure">742 мм рт. ст.</p>
+	<p class="weather_wind"><i><em></em></i>6-8 м/с</p>
+
+	<p class="weather_humidity"><i></i>0.5мм 85%</p>
+
+	<p class="weather_pressure">742 мм рт. ст.</p>
 
 </script>
 
 <script id="template_fullweek" type="text/template">
 
-    <div id="carousel-image-and-text" class="touchcarousel">
-        <ul id="touchcarousel-container" class="touchcarousel-container"/>
-    </div>
+	<div id="carousel-image-and-text" class="touchcarousel">
+		<ul id="touchcarousel-container" class="touchcarousel-container"/>
+	</div>
 	<div class="weather_plot_measure" id="weather_plot_measure2">
 	</div>
+
 </script>
+ 
 
 </body>
 </html>
