@@ -4,7 +4,7 @@ W.Views.Actual = Backbone.View.extend({
 	template: "#template_actual",
 	initialize: function() {
 		this.render();
-		this.collection.on('add', this.render, this);
+		this.collection.on('reset', this.render, this);
 	},
 	render: function() {
 

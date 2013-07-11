@@ -28,7 +28,7 @@ W.Collections.Days = Backbone.Collection.extend({
 var collection_days = new W.Collections.Days([
 	{
 		"date": "2013-03-26",
-		"tmax": "12",
+		"tmax": Math.floor(25 * Math.random()),
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
@@ -90,7 +90,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-27",
-		"tmax": "19",
+		"tmax":  Math.floor(25 * Math.random()),
 		"tmin": "10",
 		"prec": "0",
 		"prec_prob": "12",
@@ -152,7 +152,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-26",
-		"tmax": "27",
+		"tmax": Math.floor(25 * Math.random()),
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
@@ -214,7 +214,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-27",
-		"tmax": "19",
+		"tmax": Math.floor(25 * Math.random()),
 		"tmin": "10",
 		"prec": "0",
 		"prec_prob": "12",
@@ -276,7 +276,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-26",
-		"tmax": "27",
+		"tmax": Math.floor(25 * Math.random()),
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
