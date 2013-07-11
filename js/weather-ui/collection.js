@@ -9,7 +9,7 @@ var actual_forecasts = new W.Collections.Actual([
 	{
 		"id" : "0",
 		"local" : "MOSCOW",
-		"date" : "18:00",
+		"update_time" : "18:12",
 		"temp" : "+28",
 		"weather_conditions": "0",
 		"wind_dir" : "283",
@@ -28,7 +28,7 @@ W.Collections.Days = Backbone.Collection.extend({
 var collection_days = new W.Collections.Days([
 	{
 		"date": "2013-03-26",
-		"tmax": "27",
+		"tmax": "12",
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",

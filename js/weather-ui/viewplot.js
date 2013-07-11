@@ -32,13 +32,13 @@ W.Views.Plot = Backbone.View.extend({
 
 
 		for (var i = 0, ii = this.dataset.length; i < ii; i++) {
-//            prepare data
-			this._data = this.dataset[i],
+//prepare data
+			this._data = this.collection.pluck(this.dataset[i]);
 
-				this.max = Math.max.apply(Math, this.data.concat(this._data)),
+			this.max = Math.max.apply(Math, this.data.concat(this._data)),
 				this.min = Math.min.apply(Math, this.data.concat(this._data));
 
-			this.data = this.dataset[i];
+			this.data = this.collection.pluck(this.dataset[i]);
 		}
 		this.value_max = this.max;
 		this.value_min = this.min;
@@ -49,7 +49,7 @@ W.Views.Plot = Backbone.View.extend({
 
 		for (var i = 0, ii = this.dataset.length; i < ii; i++) {
 
-			var data = this.dataset[i],
+			var data = this.collection.pluck(this.dataset[i]),
 				fill = this.fillset[i],
 				color = this.colorset[i];
 
@@ -115,18 +115,8 @@ W.Views.Plot = Backbone.View.extend({
 			var rect = this.blanket[this.blanket.length - 1];
 
 			(function (x, y, i) {
-				var timer;
 				rect.click(function () {
-					var value = data[i];
-					console.log(value);
-				});
-				rect.hover(function () {
-					//                    clearTimeout(leave_timer);
-
-				}, function () {
-					//                    leave_timer = setTimeout(function () {
-					//
-					//                    }, 1);
+					W.EventsLocals.trigger(W.EventsLocals.SCROLLTO, i);
 				});
 			})(x, y, i);
 
@@ -161,6 +151,101 @@ W.Views.Plot = Backbone.View.extend({
 		bgpp = bgpp.concat([x, y, x, y, "L", x, this.height - this.bottomgutter, "z"]);
 
 		return {_p: p, _bgpp: bgpp};
+	},
+
+
+	drawGradient: function (data) {
+		var p, bgpp;
+		for (var i = 0, ii = data.length; i < ii; i++) {
+			var y = Math.round(this.height - this.bottomgutter - this.Y * data[i] + this.min * this.Y),
+				x = Math.round(this.leftgutter + this.X * (i + .5));
+			if (!i) {
+				bgpp = ["M", x, y, "C", x, y];
+			}
+			if (i && i < ii - 1) {
+//				console.log("verse" + i, data[i - 1], data[i + 1]);
+
+				var Y0 = Math.round(this.height - this.bottomgutter - this.Y * data[i - 1] + this.min * this.Y),
+					X0 = Math.round(this.leftgutter + this.X * (i - .5)),
+					Y2 = Math.round(this.height - this.bottomgutter - this.Y * data[i + 1] + this.min * this.Y),
+					X2 = Math.round(this.leftgutter + this.X * (i + 1.5));
+
+
+//				console.log("verse i, i- 0.5, i+1.5: " + i, i - .5, i + 1.5);
+
+
+				var a = this.getAnchors(X0, Y0, x, y, X2, Y2);
+				bgpp = bgpp.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
+			}
+
+		}
+
+
+		bgpp = bgpp.concat([x, y, x, y, "z"]);
+
+		var delta = 2;
+
+		for (var i = 0, ii = data.length; i < ii; i++) {
+			var y = Math.round(this.height - this.bottomgutter - this.Y * data[i] + this.min * this.Y),
+				x = Math.round(this.leftgutter + this.X * (i + .5));
+			if (!i) {
+				p = ["M", x, y, "C", x, y];
+			}
+			if (i && i < ii - 1) {
+//				console.log("verse" + i, data[i - 1], data[i + 1]);
+
+				var Y0 = Math.round(this.height - this.bottomgutter - this.Y * data[i - 1] + this.min * this.Y),
+					X0 = Math.round(this.leftgutter + this.X * (i - .5)),
+					Y2 = Math.round(this.height - this.bottomgutter - this.Y * data[i + 1] + this.min * this.Y),
+					X2 = Math.round(this.leftgutter + this.X * (i + 1.5));
+
+
+//				console.log("verse i, i- 0.5, i+1.5: " + i, i - .5, i + 1.5);
+
+
+				var a = this.getAnchors(X0, Y0, x, y, X2, Y2);
+				p = p.concat([a.x1, a.y1, x, y, a.x2, a.y2]);
+			}
+
+		}
+
+		p = p.concat([x, y, x, y, "L", x, y - delta]);
+
+
+		for (var i = data.length, ii = 0; i > ii; i--) {
+			y = Math.round(this.height - this.bottomgutter - this.Y * data[i - 1] + this.min * this.Y),
+				x = Math.round(this.leftgutter + this.X * (i - .5));
+			if (i === data.length) {
+
+
+				p = p.concat(["C", x, y - delta]);
+			}
+			if (i != data.length && i > ii + 1) {
+
+//				console.log("reverse" + i, data[i], data[i - 2]);
+
+				//				p = p.concat([x, y])
+
+				var Y0 = Math.round(this.height - this.bottomgutter - this.Y * data[i] + this.min * this.Y),
+					X0 = Math.round(this.leftgutter + this.X * (i - 1.5)),
+					Y2 = Math.round(this.height - this.bottomgutter - this.Y * data[i - 2] + this.min * this.Y),
+					X2 = Math.round(this.leftgutter + this.X * (i + 0.5));
+
+				var a = this.getAnchors(X0, Y2, x, y - delta, X2, Y0);
+
+//				console.log(a.x1, a.y1, x, y, a.x2, a.y2);
+//				console.log("reverse X0, x, X2: " + X2, x, X0);
+//				console.log("reverse Y0, y, y2: " + Y0, y, Y2);
+
+//				console.log("reverse i, i-0.5, i+1.5: " + i, i - 1.5, i + 0.5);
+
+				p = p.concat([a.x2, a.y2, x, y - delta, a.x1, a.y1]);
+			}
+		}
+		p = p.concat([x, y - delta, x, y - delta, "z"]);
+
+
+		return {_p: p, _bgpp: bgpp}
 	},
 
 	drawTicks: function () {

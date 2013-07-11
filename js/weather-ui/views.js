@@ -74,6 +74,8 @@ W.Views.OneWeek = Backbone.View.extend({
 		W.EventsLocals.on(W.EventsLocals.GETACTIVE, this.onSetActive, this);
 		W.EventsLocals.on(W.EventsLocals.COLLAPSE, this.setCollapseState, this);
 
+		W.EventsLocals.on(W.EventsLocals.COLLAPSE, this.redrawFullWeek, this);
+
 		W.EventsLocals.off(W.EventsLocals.SCROLLTO, this.slideTo, this);
 		W.EventsLocals.on(W.EventsLocals.SCROLLTO, this.slideTo, this);
 
@@ -82,33 +84,25 @@ W.Views.OneWeek = Backbone.View.extend({
 	},
 	render: function() {
 		this.$el.empty();
-		console.log("render", arguments);
-
-		var max_temp_data = [];
-		var min_temp_data = [];
+		$("#weather_plot").empty();
+		$("#weather_plot_measure").empty();
 
 		this.collection.each(function(day){
 
 			this.renderEach(day);
-			max_temp_data.push(day.get("tmax"));
-			min_temp_data.push(day.get("tmin"));
 
 		}, this);
 
-//		new W.Views.WeekPlot({collection: this.collection});
-
-
 
 		var settings = {
-			dataset: [max_temp_data, min_temp_data],
+			dataset: ["tmax", "tmin"],
 			colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
-			fillset: [["url(data:)", 0.1],["#fff", 1]],
+			fillset: [["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1],["#fff", 1]],
 			width: 720,
 			height: 70,
 			container: "weather_plot",
 			grid: "weather_plot_measure"
 		}
-
 
 
 		new W.Views.Plot({collection: this.collection, model: new Backbone.Model(settings)});
@@ -200,40 +194,6 @@ W.Views.OneDay = Backbone.View.extend({
 
 });
 
-
-
-W.Views.WeekPlot = Backbone.View.extend({
-	_el: "weather_plot",
-	_el_ticks: "weather_plot_measure",
-	initialize: function() {
-		this.render();
-	},
-	render: function() {
-
-		var max_temp_data = [];
-		var min_temp_data = [];
-
-		this.collection.each(function(day){
-
-			max_temp_data.push(day.get("tmax"));
-			min_temp_data.push(day.get("tmin"));
-
-		}, this);
-		$("#" + this._el).html("");
-		$("#" + this._el_ticks).html("");
-
-
-
-
-		new Plot([max_temp_data, min_temp_data],["rgba(255,102,0,1)", "rgba(0,102,153,1)"],[["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1], ["#fff", 1]], 720, 70, this._el, this._el_ticks);
-
-		return this;
-	}
-})
-
-
-
-
 // full view
 
 
@@ -242,7 +202,6 @@ W.Views.FullWeek = Backbone.View.extend({
 	template: '#template_fullweek',
 	initialize: function() {
 
-//		this.render();
 		this.render().carouselize().plotarize();
 
 	},
@@ -275,7 +234,22 @@ W.Views.FullWeek = Backbone.View.extend({
 	},
 	plotarize: function () {
 
-		new W.Views.FullWeekPlot({collection: this.collection});
+		bigdata = new Backbone.Collection(_.map(_.flatten(this.collection.pluck("hours")), function(model){
+			return model;
+		}));
+
+		var settings = {
+			dataset: ["tmax"],
+			colorset: ["rgba(255,102,0,1)"],
+			fillset: [""],
+			width: 5560,
+			height: 150,
+			container: "weather_plot_big",
+			grid: "weather_plot_measure2"
+		}
+
+		new W.Views.Plot({collection: bigdata, model: new Backbone.Model(settings)});
+
 		return this;
 
 	}
@@ -384,40 +358,5 @@ W.Views.Hour = Backbone.View.extend({
 		return this;
 	}
 
-});
-
-
-W.Views.FullWeekPlot = Backbone.View.extend({
-	_el: "weather_plot_big",
-	_el_ticks: "weather_plot_measure2",
-	initialize: function() {
-		this.render();
-	},
-	render: function() {
-		$("#" + this._el).html("");
-		$("#" + this._el_ticks).html("");
-
-		var bigdata = [
-//						24, 22, 20, 23,
-//						55, 23, 20, 23,
-//						22, 22, 22, 20,
-//						22, 22, 22, 20,
-//						22, 22, 22, 20,
-//						22, 22, 22, 20,
-//						23, 22, 22, 20,
-//						56
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ), Math.floor(25 * Math.random() ),
-			Math.floor(25 * Math.random() )
-		];
-//		new Plot([bigdata], ["rgba(255,102,0,1)"], [""], 1500, 150, this._el, this._el_ticks);
-
-		return this;
-	}
 });
 
