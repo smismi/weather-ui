@@ -75,4 +75,28 @@ W.Utils.WeatherCondition = function (w) {
 	return  wcs;
 }
 
+W.Utils.ReformatedDate = function (date) {
+	var d = new Date(date);
+	var weekday= ["Воскресенье", 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+	var monthname= ["Января", 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+
+	return {
+		weekday : weekday[d.getDay()],
+		day: d.getDay() + " " + monthname[d.getMonth()]
+	};
+}
+
+
+W.Utils.Sundates = function (date, X, Y) {
+
+
+	suncalc = SunCalc.getTimes(new Date(date), X, Y);
+
+	return {
+		dawn : suncalc.dawn.getHours() + ":" + (suncalc.dawn.getMinutes()<10?'0':'') + suncalc.dawn.getMinutes(),
+		dusk: suncalc.dusk.getHours() + ":" + (suncalc.dusk.getMinutes()<10?'0':'') + suncalc.dusk.getMinutes()
+
+	};
+
+}
 

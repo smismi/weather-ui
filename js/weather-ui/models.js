@@ -20,25 +20,10 @@ W.Models.Day = Backbone.Model.extend({
 		"pnight": null,
 		"hours": [],
 		"getReformatedDate": function () {
-
-			var d = new Date(this.date);
-			var weekday= ["Воскресенье", 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-			var monthname= ["Января", 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
-
-			return {
-				weekday : weekday[d.getDay()],
-				day: d.getDay() + " " + monthname[d.getMonth()]
-			};
+			return W.Utils.ReformatedDate(this.date);
 		},
 		"getSuncalcResult": function () {
-
-			suncalc = SunCalc.getTimes(new Date(this.date), Math.floor(90*Math.random() - 90), Math.floor(180*Math.random() - 180));
-
-			return {
-				dawn : suncalc.dawn.getHours() + ":" + (suncalc.dawn.getMinutes()<10?'0':'') + suncalc.dawn.getMinutes(),
-				dusk: suncalc.dusk.getHours() + ":" + (suncalc.dusk.getMinutes()<10?'0':'') + suncalc.dusk.getMinutes()
-
-			};
+			return W.Utils.Sundates(this.date, Math.floor(90*Math.random() - 90), Math.floor(180*Math.random() - 180));
 		},
 		"getWind": function () {
 			return W.Utils.Wind(this.wind_dir);
@@ -48,7 +33,6 @@ W.Models.Day = Backbone.Model.extend({
 		}
 	}
 });
-
 
 
 W.Models.Hour = W.Models.Day.extend();

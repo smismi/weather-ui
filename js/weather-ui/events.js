@@ -6,14 +6,6 @@ var W = {
 	Utils: {}
 }
 
-
-
-
-
-
-
-
-
 W.EventsLocals = _.extend({
 	// locals
 	GETACTIVE: "getactive",
