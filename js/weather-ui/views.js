@@ -95,9 +95,15 @@ W.Views.OneWeek = Backbone.View.extend({
 
 
 		var settings = {
+            path: {
+                colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
+                fillset: null
+            },
+            polygon: {
+                colorset: null,
+                fillset: [["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1],["#fff", 1]],
+            },
 			dataset: ["tmax", "tmin"],
-			colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
-			fillset: [["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1],["#fff", 1]],
 			width: 720,
 			height: 70,
 			container: "weather_plot",
@@ -240,9 +246,15 @@ W.Views.FullWeek = Backbone.View.extend({
 
 		var settings = {
 			dataset: ["tmax"],
-			colorset: ["rgba(255,102,0,1)"],
-			fillset: [""],
-			width: 5560,
+			path: {
+                colorset: [""],
+                fillset: ["90-#99c2d6:0-#eec2a3:50-#ffc299:100"]
+            },
+            polygon: {
+                colorset: [["", ""]],
+                fillset: [["", ""] ]
+            },
+            width: 5560,
 			height: 150,
 			container: "weather_plot_big",
 			grid: "weather_plot_measure2"

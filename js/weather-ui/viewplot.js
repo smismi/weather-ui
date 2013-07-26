@@ -47,18 +47,45 @@ W.Views.Plot = Backbone.View.extend({
 			this.Y = (this.height - this.bottomgutter - this.topgutter) / (this.max - this.min);
 
 
+
+        var pathfill = this.model.get("path").fillset || "",
+            pathcolor = this.model.get("path").colorset || "",
+            polygonfill = this.model.get("polygon").fillset || "",
+            polygoncolor = this.model.get("polygon").colorset || "";
+
 		for (var i = 0, ii = this.dataset.length; i < ii; i++) {
 
-			var data = this.collection.pluck(this.dataset[i]),
-				fill = this.fillset[i],
-				color = this.colorset[i];
+            var data = this.collection.pluck(this.dataset[i]);
 
 
-			var path = r.path().attr({stroke: color, "stroke-width": 3, "stroke-linejoin": "round"}),
-				bgp = r.path().attr({stroke: "none", opacity: 1, fill: fill[0], "fill-opacity": fill[1]});
 
 
-			var draw_day = this.draw(data);
+
+
+
+
+
+
+
+
+			var path = r.path().attr({"opacity": "1", stroke: pathcolor[i], "stroke-width": 3, "stroke-linejoin": "round", "fill": pathfill[i]});
+//            var path = r.path().attr({"opacity": "1", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#99c2d6:0-#eec2a3:50-#ffc299:100"}),
+
+            var bgp = r.path().attr({stroke: "none", opacity: 1, fill: polygonfill[i][0], "fill-opacity": polygonfill[i][1]});
+
+            if (pathfill ) {
+
+                var draw_day = this.drawGradient(data);
+
+            } else {
+
+                var draw_day = this.draw(data);
+
+            }
+
+
+
+//			var draw_day = this.drawGradient(data);
 
 			path.attr({path: draw_day._p});
 			bgp.attr({path: draw_day._bgpp});
