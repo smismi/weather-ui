@@ -36,7 +36,7 @@ W.Views.Plot = Backbone.View.extend({
 			this._data = this.collection.pluck(this.dataset[i]);
 
 			this.max = Math.max.apply(Math, this.data.concat(this._data)),
-				this.min = Math.min.apply(Math, this.data.concat(this._data));
+            this.min = Math.min.apply(Math, this.data.concat(this._data));
 
 			this.data = this.collection.pluck(this.dataset[i]);
 		}
@@ -50,7 +50,7 @@ W.Views.Plot = Backbone.View.extend({
 
         var pathfill = this.model.get("path").fillset || "",
             pathcolor = this.model.get("path").colorset || "",
-            polygonfill = this.model.get("polygon").fillset || "",
+            polygonfill = this.model.get("polygon").fillset || ["",""],
             polygoncolor = this.model.get("polygon").colorset || "";
 
 		for (var i = 0, ii = this.dataset.length; i < ii; i++) {

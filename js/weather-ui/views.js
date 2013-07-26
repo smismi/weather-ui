@@ -247,12 +247,12 @@ W.Views.FullWeek = Backbone.View.extend({
 		var settings = {
 			dataset: ["tmax"],
 			path: {
-                colorset: [""],
+                colorset: null,
                 fillset: ["90-#99c2d6:0-#eec2a3:50-#ffc299:100"]
             },
             polygon: {
-                colorset: [["", ""]],
-                fillset: [["", ""] ]
+                colorset: null,
+                fillset: null
             },
             width: 5560,
 			height: 150,

@@ -28,7 +28,7 @@ W.Collections.Days = Backbone.Collection.extend({
 var collection_days = new W.Collections.Days([
 	{
 		"date": "2013-03-26",
-		"tmax": Math.floor(25 * Math.random()),
+		"tmax": Math.floor(25 * Math.random()) + 12,
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
@@ -40,7 +40,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -52,7 +52,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -64,7 +64,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -76,7 +76,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -90,7 +90,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-27",
-		"tmax":  Math.floor(25 * Math.random()),
+		"tmax":  Math.floor(25 * Math.random()) + 12,
 		"tmin": "10",
 		"prec": "0",
 		"prec_prob": "12",
@@ -102,7 +102,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -114,7 +114,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -126,7 +126,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -138,7 +138,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "23",
 				"prec": "0",
 				"prec_prob": "12",
@@ -152,7 +152,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-26",
-		"tmax": Math.floor(25 * Math.random()),
+		"tmax": Math.floor(25 * Math.random()) + 12,
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
@@ -164,7 +164,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -176,7 +176,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -188,7 +188,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -200,7 +200,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -214,7 +214,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-27",
-		"tmax": Math.floor(25 * Math.random()),
+		"tmax": Math.floor(25 * Math.random()) + 12,
 		"tmin": "10",
 		"prec": "0",
 		"prec_prob": "12",
@@ -226,7 +226,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -238,7 +238,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -250,7 +250,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -262,7 +262,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -276,7 +276,7 @@ var collection_days = new W.Collections.Days([
 	},
 	{
 		"date": "2013-03-26",
-		"tmax": Math.floor(25 * Math.random()),
+		"tmax": Math.floor(25 * Math.random()) + 12,
 		"tmin": "12",
 		"prec": "0",
 		"prec_prob": "1",
@@ -288,7 +288,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -300,7 +300,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -312,7 +312,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -324,7 +324,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -350,7 +350,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -362,7 +362,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -374,7 +374,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -386,7 +386,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -412,7 +412,7 @@ var collection_days = new W.Collections.Days([
 		"hours": [
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -424,7 +424,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -436,7 +436,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -448,7 +448,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -460,7 +460,7 @@ var collection_days = new W.Collections.Days([
 			},
 			{
 				"date": "2013-03-27",
-				"tmax": Math.floor(25 * Math.random()),
+				"tmax": Math.floor(25 * Math.random()) + 12,
 				"tmin": "10",
 				"prec": "0",
 				"prec_prob": "12",
@@ -485,7 +485,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -497,7 +497,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -509,7 +509,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -521,7 +521,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -536,7 +536,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -548,7 +548,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -560,7 +560,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -572,7 +572,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -587,7 +587,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -599,7 +599,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -611,7 +611,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -623,7 +623,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -638,7 +638,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -650,7 +650,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -662,7 +662,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -674,7 +674,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -689,7 +689,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -701,7 +701,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -713,7 +713,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -725,7 +725,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -740,7 +740,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -752,7 +752,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -764,7 +764,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -776,7 +776,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -792,7 +792,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -804,7 +804,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -816,7 +816,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -828,7 +828,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -840,7 +840,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -857,7 +857,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -869,7 +869,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -881,7 +881,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -893,7 +893,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -908,7 +908,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -920,7 +920,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -932,7 +932,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -944,7 +944,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -959,7 +959,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -971,7 +971,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -983,7 +983,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -995,7 +995,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1010,7 +1010,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1022,7 +1022,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1034,7 +1034,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1046,7 +1046,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1061,7 +1061,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1073,7 +1073,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1085,7 +1085,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1097,7 +1097,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1112,7 +1112,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1124,7 +1124,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1136,7 +1136,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1148,7 +1148,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1163,7 +1163,7 @@ var collection_locals = new W.Collections.Local([
 			"hours": [
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1175,7 +1175,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1187,7 +1187,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1199,7 +1199,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
@@ -1211,7 +1211,7 @@ var collection_locals = new W.Collections.Local([
 				},
 				{
 					"date": "2013-03-27",
-					"tmax": Math.floor(25 * Math.random()),
+					"tmax": Math.floor(25 * Math.random()) + 12,
 					"tmin": "10",
 					"prec": "0",
 					"prec_prob": "12",
