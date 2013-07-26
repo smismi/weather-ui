@@ -44,13 +44,16 @@ W.Views.Plot = Backbone.View.extend({
 		this.value_min = this.min;
 
 		this.X = (this.width - this.leftgutter) / this.data.length,
-			this.Y = (this.height - this.bottomgutter - this.topgutter) / (this.max - this.min);
+        this.Y = (this.height - this.bottomgutter - this.topgutter) / (this.max - this.min);
 
 
 
         var pathfill = this.model.get("path").fillset || "",
+            pathfauxdelta = this.model.get("path").pathfauxdelta || "",
             pathcolor = this.model.get("path").colorset || "",
+            pathstroke= this.model.get("path").stroke || 0,
             polygonfill = this.model.get("polygon").fillset || ["",""],
+            polygonstroke= this.model.get("polygon").stroke || 0 ,
             polygoncolor = this.model.get("polygon").colorset || "";
 
 		for (var i = 0, ii = this.dataset.length; i < ii; i++) {
@@ -68,14 +71,14 @@ W.Views.Plot = Backbone.View.extend({
 
 
 
-			var path = r.path().attr({"opacity": "1", stroke: pathcolor[i], "stroke-width": 3, "stroke-linejoin": "round", "fill": pathfill[i]});
+			var path = r.path().attr({"opacity": 1, stroke: pathcolor[i], "stroke-width": pathstroke[i], "stroke-linejoin": "round", "fill": pathfill[i]});
 //            var path = r.path().attr({"opacity": "1", stroke: "#f00", "stroke-width": 0, "stroke-linejoin": "round", "fill": "90-#99c2d6:0-#eec2a3:50-#ffc299:100"}),
 
-            var bgp = r.path().attr({stroke: "none", opacity: 1, fill: polygonfill[i][0], "fill-opacity": polygonfill[i][1]});
+            var bgp = r.path().attr({stroke: polygonstroke[i], "opacity": 1, fill: polygonfill[i][0], "fill-opacity": polygonfill[i][1]});
 
             if (pathfill ) {
 
-                var draw_day = this.drawGradient(data);
+                var draw_day = this.drawGradient(data, pathfauxdelta[i]);
 
             } else {
 
@@ -181,7 +184,7 @@ W.Views.Plot = Backbone.View.extend({
 	},
 
 
-	drawGradient: function (data) {
+	drawGradient: function (data, delta) {
 		var p, bgpp;
 		for (var i = 0, ii = data.length; i < ii; i++) {
 			var y = Math.round(this.height - this.bottomgutter - this.Y * data[i] + this.min * this.Y),
@@ -210,7 +213,6 @@ W.Views.Plot = Backbone.View.extend({
 
 		bgpp = bgpp.concat([x, y, x, y, "z"]);
 
-		var delta = 2;
 
 		for (var i = 0, ii = data.length; i < ii; i++) {
 			var y = Math.round(this.height - this.bottomgutter - this.Y * data[i] + this.min * this.Y),

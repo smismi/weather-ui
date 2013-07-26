@@ -97,10 +97,12 @@ W.Views.OneWeek = Backbone.View.extend({
 		var settings = {
             path: {
                 colorset: ["rgba(255,102,0,1)", "rgba(0,102,153,1)"],
+                stroke: [6, 12],
                 fillset: null
             },
             polygon: {
                 colorset: null,
+                stroke: null,
                 fillset: [["url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAVSURBVHjaYmBAgP8MRHHQwX+AAAMAgcID/ZGxyQ8AAAAASUVORK5CYII=)",.1],["#fff", 1]],
             },
 			dataset: ["tmax", "tmin"],
@@ -248,10 +250,14 @@ W.Views.FullWeek = Backbone.View.extend({
 			dataset: ["tmax"],
 			path: {
                 colorset: null,
-                fillset: ["90-#99c2d6:0-#eec2a3:50-#ffc299:100"]
+                stroke: null,
+//                fillset: ["90-#99c2d6:0-#eec2a3:50-#ffc299:100"],
+                fillset: ["90-#0000ff:0-#ff0000:100"],
+                pathfauxdelta : [14]
             },
             polygon: {
                 colorset: null,
+                stroke: null,
                 fillset: null
             },
             width: 5560,
